@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <start>
+    <map value="starfield" />
+    <position x="2614" y="900" />
+    <party>
+      <character id="travis" />
+    </party>
+  </start>
+  
+  <basestats id="travis">
+    
+  </basestats>
+</config>

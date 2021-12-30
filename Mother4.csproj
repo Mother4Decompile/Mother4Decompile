@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{E566045E-56CA-4ADF-820D-C585D9D9C215}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mother4</RootNamespace>
+    <AssemblyName>Mother4</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Mother4.ico</ApplicationIcon>
+    <StartupObject>Mother4.Program</StartupObject>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Carbine, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Carbine\Carbine\bin\Debug\Carbine.dll</HintPath>
+    </Reference>
+    <Reference Include="FMOD">
+      <HintPath>..\..\lib\FMOD.dll</HintPath>
+    </Reference>
+    <Reference Include="fNbt, Version=0.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Carbine\Carbine\bin\Debug\fNbt.dll</HintPath>
+    </Reference>
+    <Reference Include="sfmlnet-graphics-2, Version=2.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Carbine\Carbine\bin\Debug\sfmlnet-graphics-2.dll</HintPath>
+    </Reference>
+    <Reference Include="sfmlnet-system-2, Version=2.2.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Carbine\Carbine\bin\Debug\sfmlnet-system-2.dll</HintPath>
+    </Reference>
+    <Reference Include="sfmlnet-window-2, Version=2.2.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Carbine\Carbine\bin\Debug\sfmlnet-window-2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actors\Animation\AnimationContext.cs" />
+    <Compile Include="Actors\Animation\AnimationControl.cs" />
+    <Compile Include="Actors\Animation\AnimationNames.cs" />
+    <Compile Include="Actors\Animation\AnimationType.cs" />
+    <Compile Include="Actors\NPCs\EnemyNPC.cs" />
+    <Compile Include="Actors\NPCs\Movement\AreaMover.cs" />
+    <Compile Include="Actors\NPCs\Movement\FacePlayerMover.cs" />
+    <Compile Include="Actors\NPCs\Movement\LookForTroubleMover.cs" />
+    <Compile Include="Actors\NPCs\Movement\Mover.cs" />
+    <Compile Include="Actors\NPCs\Movement\MushroomMover.cs" />
+    <Compile Include="Actors\NPCs\Movement\NoneMover.cs" />
+    <Compile Include="Actors\NPCs\Movement\PathMover.cs" />
+    <Compile Include="Actors\NPCs\Movement\PointMover.cs" />
+    <Compile Include="Actors\NPCs\Movement\RandomMover.cs" />
+    <Compile Include="Actors\NPCs\Movement\RandomTurnMover.cs" />
+    <Compile Include="Actors\NPCs\Movement\TeleportMover.cs" />
+    <Compile Include="Actors\NPCs\Movement\WaitAndChaseMover.cs" />
+    <Compile Include="Actors\NPCs\Movement\ZigZagMover.cs" />
+    <Compile Include="Actors\NPCs\NPC.cs" />
+    <Compile Include="Actors\PartyFollower.cs" />
+    <Compile Include="Actors\Player.cs" />
+    <Compile Include="Battle\Actions\ActionParams.cs" />
+    <Compile Include="Battle\Actions\BattleAction.cs" />
+    <Compile Include="Battle\Actions\BattleEscapeAction.cs" />
+    <Compile Include="Battle\Actions\BattleWinAction.cs" />
+    <Compile Include="Battle\Actions\BuffCancelAction.cs" />
+    <Compile Include="Battle\Actions\DecisionAction.cs" />
+    <Compile Include="Battle\Actions\EnemyBashAction.cs" />
+    <Compile Include="Battle\Actions\EnemyDeathAction.cs" />
+    <Compile Include="Battle\Actions\EnemyDecisionAction.cs" />
+    <Compile Include="Battle\Actions\EnemyProjectileAction.cs" />
+    <Compile Include="Battle\Actions\EnemyTurnWasteAction.cs" />
+    <Compile Include="Battle\Actions\FloydTalkAction.cs" />
+    <Compile Include="Battle\Actions\GroovyAction.cs" />
+    <Compile Include="Battle\Actions\MessageAction.cs" />
+    <Compile Include="Battle\Actions\PlayerBashAction.cs" />
+    <Compile Include="Battle\Actions\PlayerDecisionAction.cs" />
+    <Compile Include="Battle\Actions\PlayerGuardAction.cs" />
+    <Compile Include="Battle\Actions\PsiAction.cs" />
+    <Compile Include="Battle\Actions\ShieldAction.cs" />
+    <Compile Include="Battle\Actions\StatusEffectAction.cs" />
+    <Compile Include="Battle\Actions\TalkStatusEffectAction.cs" />
+    <Compile Include="Battle\Actions\TestingSmiteAction.cs" />
+    <Compile Include="Battle\Background\BackgroundLayer.cs" />
+    <Compile Include="Battle\Background\BattleBackground.cs" />
+    <Compile Include="Battle\Background\BattleBackgroundRenderable.cs" />
+    <Compile Include="Battle\Background\LayerParams.cs" />
+    <Compile Include="Battle\Background\LayerVariation.cs" />
+    <Compile Include="Battle\Background\LayerVariationType.cs" />
+    <Compile Include="Battle\Background\PaletteChange.cs" />
+    <Compile Include="Battle\BattleCalculator.cs" />
+    <Compile Include="Battle\BattleController.cs" />
+    <Compile Include="Battle\BattleFaction.cs" />
+    <Compile Include="Battle\BattleInterfaceController.cs" />
+    <Compile Include="Battle\BattleStatus.cs" />
+    <Compile Include="Battle\CombatantController.cs" />
+    <Compile Include="Battle\Combatants\Combatant.cs" />
+    <Compile Include="Battle\Combatants\EnemyCombatant.cs" />
+    <Compile Include="Battle\Combatants\PlayerCombatant.cs" />
+    <Compile Include="Battle\Combos\ComboController.cs" />
+    <Compile Include="Battle\Combos\ComboNode.cs" />
+    <Compile Include="Battle\Combos\ComboSet.cs" />
+    <Compile Include="Battle\Combos\ComboType.cs" />
+    <Compile Include="Battle\EnemyAI\IEnemyAI.cs" />
+    <Compile Include="Battle\EnemyAI\RandomAI.cs" />
+    <Compile Include="Battle\EnemyAI\TravisMustDieAI.cs" />
+    <Compile Include="Battle\PsiAnimation\PsiAnimator.cs" />
+    <Compile Include="Battle\PsiAnimation\PsiElement.cs" />
+    <Compile Include="Battle\PsiAnimation\PsiElementList.cs" />
+    <Compile Include="Battle\StatSet.cs" />
+    <Compile Include="Battle\StatusEffect.cs" />
+    <Compile Include="Battle\StatusEffectInstance.cs" />
+    <Compile Include="Battle\TargetingMode.cs" />
+    <Compile Include="Battle\UI\BattleCard.cs" />
+    <Compile Include="Battle\UI\BattleMeter.cs" />
+    <Compile Include="Battle\UI\BattlePsiBox.cs" />
+    <Compile Include="Battle\UI\BattleSmash.cs" />
+    <Compile Include="Battle\UI\BattleTextBox.cs" />
+    <Compile Include="Battle\UI\Blinker.cs" />
+    <Compile Include="Battle\UI\ButtonBar.cs" />
+    <Compile Include="Battle\UI\CardBar.cs" />
+    <Compile Include="Battle\UI\ComboAnimator.cs" />
+    <Compile Include="Battle\UI\DamageNumber.cs" />
+    <Compile Include="Battle\UI\Groovy.cs" />
+    <Compile Include="Battle\UI\LevelUpJingler.cs" />
+    <Compile Include="Battle\UI\Modifiers\GraphicShielder.cs" />
+    <Compile Include="Battle\UI\Modifiers\GraphicTalker.cs" />
+    <Compile Include="Battle\UI\Odometer.cs" />
+    <Compile Include="Battle\UI\OdometerRoller.cs" />
+    <Compile Include="Battle\UI\SelectionState.cs" />
+    <Compile Include="Battle\UI\TotalDamageNumber.cs" />
+    <Compile Include="Battle\UI\YouWon.cs" />
+    <Compile Include="Data\BattleButtonBars.cs" />
+    <Compile Include="Data\CharacterComboSounds.cs" />
+    <Compile Include="Data\CharacterGraphics.cs" />
+    <Compile Include="Data\CharacterNames.cs" />
+    <Compile Include="Data\CharacterStats.cs" />
+    <Compile Include="Data\CharacterStatusEffects.cs" />
+    <Compile Include="Data\CharacterType.cs" />
+    <Compile Include="Data\Character\CharacterData.cs" />
+    <Compile Include="Data\Character\CharacterFile.cs" />
+    <Compile Include="Data\ComboLoader.cs" />
+    <Compile Include="Data\Config\ConfigReader.cs" />
+    <Compile Include="Data\Enemies\ActionParamsFactory.cs" />
+    <Compile Include="Data\Enemies\EnemyData.cs" />
+    <Compile Include="Data\Enemies\EnemyFile.cs" />
+    <Compile Include="Data\Enemies\EnemyImmunities.cs" />
+    <Compile Include="Data\Enemies\EnemyOptions.cs" />
+    <Compile Include="Data\EnemyBattleActions.cs" />
+    <Compile Include="Data\EnemyBattleBackgrounds.cs" />
+    <Compile Include="Data\EnemyDeathText.cs" />
+    <Compile Include="Data\EnemyGraphics.cs" />
+    <Compile Include="Data\EnemyMovers.cs" />
+    <Compile Include="Data\EnemyMusic.cs" />
+    <Compile Include="Data\EnemyNames.cs" />
+    <Compile Include="Data\EnemyStats.cs" />
+    <Compile Include="Data\EnemyThoughts.cs" />
+    <Compile Include="Data\EnemyType.cs" />
+    <Compile Include="Data\LevelUpBuilder.cs" />
+    <Compile Include="Data\PartyManager.cs" />
+    <Compile Include="Data\Paths.cs" />
+    <Compile Include="Data\PsiAnimations.cs" />
+    <Compile Include="Data\PsiLetters.cs" />
+    <Compile Include="Data\Psi\AssistPsiData.cs" />
+    <Compile Include="Data\Psi\DefensePsiData.cs" />
+    <Compile Include="Data\Psi\OffensePsiData.cs" />
+    <Compile Include="Data\Psi\OtherPsiData.cs" />
+    <Compile Include="Data\Psi\PsiData.cs" />
+    <Compile Include="Data\Psi\PsiFile.cs" />
+    <Compile Include="Data\Psi\PsiLevel.cs" />
+    <Compile Include="Data\Psi\PsiType.cs" />
+    <Compile Include="Data\SaveFileManager.cs" />
+    <Compile Include="Data\SaveProfile.cs" />
+    <Compile Include="Data\Settings.cs" />
+    <Compile Include="Data\ShadowSize.cs" />
+    <Compile Include="Data\StatusEffectActions.cs" />
+    <Compile Include="Data\UIColors.cs" />
+    <Compile Include="GUI\FlyoverText.cs" />
+    <Compile Include="GUI\Fonts.cs" />
+    <Compile Include="GUI\IrisOverlay.cs" />
+    <Compile Include="GUI\LetterboxingOverlay.cs" />
+    <Compile Include="GUI\MenuPanel.cs" />
+    <Compile Include="GUI\Modifiers\GraphicBlinker.cs" />
+    <Compile Include="GUI\Modifiers\GraphicBouncer.cs" />
+    <Compile Include="GUI\Modifiers\GraphicDeathFader.cs" />
+    <Compile Include="GUI\Modifiers\GraphicFader.cs" />
+    <Compile Include="GUI\Modifiers\GraphicTranslator.cs" />
+    <Compile Include="GUI\Modifiers\IGraphicModifier.cs" />
+    <Compile Include="GUI\Nametag.cs" />
+    <Compile Include="GUI\NamingMenu\NamingCharacter.cs" />
+    <Compile Include="GUI\NamingMenu\NamingPanel.cs" />
+    <Compile Include="GUI\NamingMenu\TextInputPanel.cs" />
+    <Compile Include="GUI\OverworldMenu\GoodsMenu.cs" />
+    <Compile Include="GUI\OverworldMenu\MainMenu.cs" />
+    <Compile Include="GUI\OverworldMenu\MoneyMenu.cs" />
+    <Compile Include="GUI\OverworldMenu\PsiMenu.cs" />
+    <Compile Include="GUI\OverworldMenu\UsePsiMenu.cs" />
+    <Compile Include="GUI\OverworldTextBox.cs" />
+    <Compile Include="GUI\ProfileMenu\ProfilePanel.cs" />
+    <Compile Include="GUI\PsiList.cs" />
+    <Compile Include="GUI\ScrollingList.cs" />
+    <Compile Include="GUI\TextBox.cs" />
+    <Compile Include="GUI\Text\Printables\GraphicPrintable.cs" />
+    <Compile Include="GUI\Text\Printables\Printable.cs" />
+    <Compile Include="GUI\Text\Printables\QuestionPrintable.cs" />
+    <Compile Include="GUI\Text\Printables\TextPrintable.cs" />
+    <Compile Include="GUI\Text\PrintActions\PrintAction.cs" />
+    <Compile Include="GUI\Text\PrintActions\PrintActionType.cs" />
+    <Compile Include="GUI\Text\TextProcessor.cs" />
+    <Compile Include="GUI\Text\Typewriter.cs" />
+    <Compile Include="Items\InvalidPropertyType.cs" />
+    <Compile Include="Items\Inventory.cs" />
+    <Compile Include="Items\InventoryManager.cs" />
+    <Compile Include="Items\Item.cs" />
+    <Compile Include="Items\ItemPropertyNotFoundException.cs" />
+    <Compile Include="Overworld\BattleSwirlOverlay.cs" />
+    <Compile Include="Overworld\EnemySpawner.cs" />
+    <Compile Include="Overworld\FootstepPlayer.cs" />
+    <Compile Include="Overworld\MapPopulator.cs" />
+    <Compile Include="Overworld\ParallaxBackground.cs" />
+    <Compile Include="Overworld\PartyTrain.cs" />
+    <Compile Include="Overworld\Portal.cs" />
+    <Compile Include="Overworld\RainOverlay.cs" />
+    <Compile Include="Overworld\TerrainType.cs" />
+    <Compile Include="Overworld\TriggerArea.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rufini\Actions\Types\AddExpAction.cs" />
+    <Compile Include="Rufini\Actions\Types\AddMoneyAction.cs" />
+    <Compile Include="Rufini\Actions\Types\AddPartyMemberAction.cs" />
+    <Compile Include="Rufini\Actions\Types\AnimationAction.cs" />
+    <Compile Include="Rufini\Actions\Types\CallAction.cs" />
+    <Compile Include="Rufini\Actions\Types\CameraMoveAction.cs" />
+    <Compile Include="Rufini\Actions\Types\CameraNPCAction.cs" />
+    <Compile Include="Rufini\Actions\Types\CameraPlayerAction.cs" />
+    <Compile Include="Rufini\Actions\Types\ChangeSpriteNPCAction.cs" />
+    <Compile Include="Rufini\Actions\Types\ChangeSpritePlayerAction.cs" />
+    <Compile Include="Rufini\Actions\Types\ChangeSubspriteNPCAction.cs" />
+    <Compile Include="Rufini\Actions\Types\ChangeSubspritePlayerAction.cs" />
+    <Compile Include="Rufini\Actions\Types\ElseAction.cs" />
+    <Compile Include="Rufini\Actions\Types\EmoticonNPCAction.cs" />
+    <Compile Include="Rufini\Actions\Types\EmoticonPlayerAction.cs" />
+    <Compile Include="Rufini\Actions\Types\EndIfAction.cs" />
+    <Compile Include="Rufini\Actions\Types\EntityAddAction.cs" />
+    <Compile Include="Rufini\Actions\Types\EntityDeleteAction.cs" />
+    <Compile Include="Rufini\Actions\Types\EntityDepthAction.cs" />
+    <Compile Include="Rufini\Actions\Types\EntityDirectionAction.cs" />
+    <Compile Include="Rufini\Actions\Types\EntityMoveAction.cs" />
+    <Compile Include="Rufini\Actions\Types\EntityMoveModeAction.cs" />
+    <Compile Include="Rufini\Actions\Types\ExecutionModeAction.cs" />
+    <Compile Include="Rufini\Actions\Types\FlyoverTextAction.cs" />
+    <Compile Include="Rufini\Actions\Types\HopNPCAction.cs" />
+    <Compile Include="Rufini\Actions\Types\HopPlayerAction.cs" />
+    <Compile Include="Rufini\Actions\Types\IfFlagAction.cs" />
+    <Compile Include="Rufini\Actions\Types\IfReturnAction.cs" />
+    <Compile Include="Rufini\Actions\Types\IfValueAction.cs" />
+    <Compile Include="Rufini\Actions\Types\ItemAddAction.cs" />
+    <Compile Include="Rufini\Actions\Types\ItemRemoveAction.cs" />
+    <Compile Include="Rufini\Actions\Types\MapMarkClearAction.cs" />
+    <Compile Include="Rufini\Actions\Types\MapMarkSetAction.cs" />
+    <Compile Include="Rufini\Actions\Types\PlaySFXAction.cs" />
+    <Compile Include="Rufini\Actions\Types\PrintLnAction.cs" />
+    <Compile Include="Rufini\Actions\Types\QuestionAction.cs" />
+    <Compile Include="Rufini\Actions\Types\RemovePartyMemberAction.cs" />
+    <Compile Include="Rufini\Actions\Types\ScreenEffectAction.cs" />
+    <Compile Include="Rufini\Actions\Types\ScreenFadeAction.cs" />
+    <Compile Include="Rufini\Actions\Types\ScreenFlashAction.cs" />
+    <Compile Include="Rufini\Actions\Types\ScreenShakeAction.cs" />
+    <Compile Include="Rufini\Actions\Types\SetBGMAction.cs" />
+    <Compile Include="Rufini\Actions\Types\SetFlagAction.cs" />
+    <Compile Include="Rufini\Actions\Types\SetMoneyAction.cs" />
+    <Compile Include="Rufini\Actions\Types\SetNametagAction.cs" />
+    <Compile Include="Rufini\Actions\Types\SetNpcAction.cs" />
+    <Compile Include="Rufini\Actions\Types\SetStatusEffectAction.cs" />
+    <Compile Include="Rufini\Actions\Types\StartBattleAction.cs" />
+    <Compile Include="Rufini\Actions\Types\StatModifyAction.cs" />
+    <Compile Include="Rufini\Actions\Types\StatSetAction.cs" />
+    <Compile Include="Rufini\Actions\Types\TextboxAction.cs" />
+    <Compile Include="Rufini\Actions\Types\TimeAction.cs" />
+    <Compile Include="Rufini\Actions\Types\ValueAddAction.cs" />
+    <Compile Include="Rufini\Actions\Types\ValueSetAction.cs" />
+    <Compile Include="Rufini\Actions\Types\WaitAction.cs" />
+    <Compile Include="Rufini\Actions\Types\WeatherAction.cs" />
+    <Compile Include="Rufini\Strings\StringFile.cs" />
+    <Compile Include="Scenes\BattleScene.cs" />
+    <Compile Include="Scenes\EnemyTestScene.cs" />
+    <Compile Include="Scenes\MapTestSetupScene.cs" />
+    <Compile Include="Scenes\MenuScene.cs" />
+    <Compile Include="Scenes\NamingScene.cs" />
+    <Compile Include="Scenes\OptionsScene.cs" />
+    <Compile Include="Scenes\OverworldScene.cs" />
+    <Compile Include="Scenes\ProfilesScene.cs" />
+    <Compile Include="Scenes\PsiTestScene.cs" />
+    <Compile Include="Scenes\SaveScene.cs" />
+    <Compile Include="Scenes\StandardScene.cs" />
+    <Compile Include="Scenes\SwirlTestScene.cs" />
+    <Compile Include="Scenes\TextTestScene.cs" />
+    <Compile Include="Scenes\TitleScene.cs" />
+    <Compile Include="Scenes\Transitions\BattleFadeTransition.cs" />
+    <Compile Include="Scenes\Transitions\BattleSwirlTransition.cs" />
+    <Compile Include="Scenes\Transitions\IrisTransition.cs" />
+    <Compile Include="Scripts\ActionFactory.cs" />
+    <Compile Include="Scripts\Actions\ActionParam.cs" />
+    <Compile Include="Scripts\Actions\ActionReturnContext.cs" />
+    <Compile Include="Scripts\Actions\ParamTypes\RufiniOption.cs" />
+    <Compile Include="Scripts\Actions\ParamTypes\RufiniString.cs" />
+    <Compile Include="Scripts\Actions\RufiniAction.cs" />
+    <Compile Include="Scripts\Actions\Types\ActionCodes.cs" />
+    <Compile Include="Scripts\Actions\Types\GoToMapAction.cs" />
+    <Compile Include="Scripts\Actions\Types\IrisOverlayAction.cs" />
+    <Compile Include="Scripts\Actions\Types\NoopAction.cs" />
+    <Compile Include="Scripts\Actions\Types\PlayerMoveAction.cs" />
+    <Compile Include="Scripts\Actions\Types\PlayerPathMoveAction.cs" />
+    <Compile Include="Scripts\Actions\Types\PlayerPositionAction.cs" />
+    <Compile Include="Scripts\Actions\Types\PlayerShadowAction.cs" />
+    <Compile Include="Scripts\Actions\Types\ResetSubspriteNPCAction.cs" />
+    <Compile Include="Scripts\Actions\Types\ResetSubspritePlayerAction.cs" />
+    <Compile Include="Scripts\Actions\Types\SetControlAction.cs" />
+    <Compile Include="Scripts\Actions\Types\SetNPCAnimationLoopCountAction.cs" />
+    <Compile Include="Scripts\Actions\Types\SetPlayerAnimationLoopCountAction.cs" />
+    <Compile Include="Scripts\Actions\Types\SetPlayerDirectionAction.cs" />
+    <Compile Include="Scripts\Actions\Types\SetTilesetPaletteAction.cs" />
+    <Compile Include="Scripts\Actions\Types\TelepathyEndAction.cs" />
+    <Compile Include="Scripts\Actions\Types\TelepathyStartAction.cs" />
+    <Compile Include="Scripts\Actions\Types\ToggleLetterboxingAction.cs" />
+    <Compile Include="Scripts\Actions\Types\ToggleTextboxAction.cs" />
+    <Compile Include="Scripts\Actions\Types\ValueRandomAction.cs" />
+    <Compile Include="Scripts\ExecutionContext.cs" />
+    <Compile Include="Scripts\Script.cs" />
+    <Compile Include="Scripts\ScriptExecutor.cs" />
+    <Compile Include="Scripts\ScriptLoader.cs" />
+    <Compile Include="Utility\Capitalizer.cs" />
+    <Compile Include="Utility\EmbeddedResources.cs" />
+    <Compile Include="Utility\ScreenDimmer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\bbg.frag" />
+    <EmbeddedResource Include="Resources\bbg.vert" />
+    <EmbeddedResource Include="Resources\config.xml" />
+    <EmbeddedResource Include="Resources\gradmap.frag" />
+    <EmbeddedResource Include="Resources\iris.frag" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
