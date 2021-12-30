@@ -1,0 +1,28 @@
+## Layer 0
+File=C:\Users\pastel\Dropbox\mother-4-game\Binaries\DistortionizerProDeluxeBetaAlpha\Resources\BBG\Pueblo1.PNG
+Name=Pueblo1
+Mode=3
+Blend=0
+Amplitude=0.06
+Scale=-0.85
+Frequency=-0.07
+Compression=0
+Speed=0.05
+Opacity=1
+Xtrans=0.0868
+Ytrans=0
+
+## Layer 1
+File=C:\Users\pastel\Dropbox\mother-4-game\Binaries\DistortionizerProDeluxeBetaAlpha\Resources\BBG\Pueblo1.PNG
+Name=Pueblo1
+Mode=0
+Blend=0
+Amplitude=-0.1
+Scale=0.5
+Frequency=0.05
+Compression=0
+Speed=0.05
+Opacity=0.4784314
+Xtrans=-0.0344
+Ytrans=0
+

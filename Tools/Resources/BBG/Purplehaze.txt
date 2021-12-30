@@ -1,0 +1,56 @@
+## Layer 0
+File=C:\Users\pastel\Dropbox\mother-4-game\Binaries\DistortionizerProDeluxeBetaAlpha\Resources\BBG\BBG1.png
+Name=BBG1
+Mode=0
+Blend=0
+Amplitude=0
+Scale=0
+Frequency=0
+Compression=0
+Speed=0
+Opacity=1
+Xtrans=0
+Ytrans=0
+
+## Layer 1
+File=C:\Users\pastel\Dropbox\mother-4-game\Binaries\DistortionizerProDeluxeBetaAlpha\Resources\BBG\Pueblo1.PNG
+Name=Pueblo1
+Mode=0
+Blend=4
+Amplitude=0.05
+Scale=-0.85
+Frequency=-0.07
+Compression=0
+Speed=0.05
+Opacity=0.7882353
+Xtrans=-0.0614
+Ytrans=0
+
+## Layer 2
+File=C:\Users\pastel\Dropbox\mother-4-game\Binaries\DistortionizerProDeluxeBetaAlpha\Resources\BBG\Pueblo1.PNG
+Name=Pueblo1
+Mode=0
+Blend=4
+Amplitude=0.03
+Scale=2.38
+Frequency=-0.1
+Compression=0
+Speed=0.05
+Opacity=0.454902
+Xtrans=0.0824
+Ytrans=0
+
+## Layer 3
+File=C:\Users\pastel\Dropbox\mother-4-game\Binaries\DistortionizerProDeluxeBetaAlpha\Resources\BBG\DiamondgradeMerge.png
+Name=DiamondgradeMerge
+Mode=3
+Blend=4
+Amplitude=0.14
+Scale=-0.52
+Frequency=-0.16
+Compression=-0.82
+Speed=0.06
+Opacity=1
+Xtrans=0
+Ytrans=-0.0378
+

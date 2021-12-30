@@ -1,0 +1,56 @@
+## Layer 0
+File=C:\Users\pastel\Dropbox\mother-4-game\Binaries\DistortionizerProDeluxeBetaAlpha\Resources\BBG\Pleiades1.png
+Name=Pleiades1
+Mode=2
+Blend=0
+Amplitude=-0.07
+Scale=-0.85
+Frequency=0.05
+Compression=0.05
+Speed=0.1
+Opacity=1
+Xtrans=0.0082
+Ytrans=-0.0344
+
+## Layer 1
+File=C:\Users\pastel\Dropbox\mother-4-game\Binaries\DistortionizerProDeluxeBetaAlpha\Resources\BBG\Pleiades1.png
+Name=Pleiades1
+Mode=2
+Blend=4
+Amplitude=-0.18
+Scale=0.36
+Frequency=-0.03
+Compression=0.38
+Speed=0.1
+Opacity=1
+Xtrans=-0.0114
+Ytrans=0.0092
+
+## Layer 2
+File=C:\Users\pastel\Dropbox\mother-4-game\Binaries\DistortionizerProDeluxeBetaAlpha\Resources\BBG\Banding1.png
+Name=Banding1
+Mode=0
+Blend=2
+Amplitude=-0.05
+Scale=1.83
+Frequency=0.1
+Compression=0
+Speed=0.05
+Opacity=0.3254902
+Xtrans=-0.0454
+Ytrans=0
+
+## Layer 3
+File=C:\Users\pastel\Dropbox\mother-4-game\Binaries\DistortionizerProDeluxeBetaAlpha\Resources\BBG\Pleiades1.png
+Name=Pleiades1
+Mode=2
+Blend=0
+Amplitude=-0.1
+Scale=0.63
+Frequency=0.1
+Compression=0.71
+Speed=0.11
+Opacity=1
+Xtrans=-0.0388
+Ytrans=-0.029
+

@@ -1,0 +1,42 @@
+## Layer 0
+File=C:\Users\pastel\Dropbox\mother-4-game\Binaries\DistortionizerProDeluxeBetaAlpha\Resources\BBG\Banding1.png
+Name=Banding1
+Mode=0
+Blend=0
+Amplitude=-0.01
+Scale=0.9
+Frequency=-0.1
+Compression=0.05
+Speed=0.15
+Opacity=1
+Xtrans=-0.0092
+Ytrans=-0.013
+
+## Layer 1
+File=C:\Users\pastel\Dropbox\mother-4-game\Binaries\DistortionizerProDeluxeBetaAlpha\Resources\BBG\Banding1.png
+Name=Banding1
+Mode=0
+Blend=5
+Amplitude=-0.02
+Scale=-0.41
+Frequency=0.09
+Compression=0
+Speed=0.05
+Opacity=0.9333333
+Xtrans=0.0114
+Ytrans=0.0334
+
+## Layer 2
+File=C:\Users\pastel\Dropbox\mother-4-game\Binaries\DistortionizerProDeluxeBetaAlpha\Resources\BBG\Banding1.png
+Name=Banding1
+Mode=0
+Blend=3
+Amplitude=-0.04
+Scale=0.14
+Frequency=0.05
+Compression=0.6
+Speed=0.13
+Opacity=1
+Xtrans=0
+Ytrans=-0.0344
+

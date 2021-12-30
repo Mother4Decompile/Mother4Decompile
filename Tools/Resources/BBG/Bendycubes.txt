@@ -1,0 +1,42 @@
+## Layer 0
+File=C:\Users\pastel\Dropbox\mother-4-game\Binaries\DistortionizerProDeluxeBetaAlpha\Resources\BBG\Rainbowband.png
+Name=Rainbowband
+Mode=3
+Blend=0
+Amplitude=-0.02
+Scale=0.36
+Frequency=-0.21
+Compression=-1.25
+Speed=0.05
+Opacity=1
+Xtrans=-0.0224
+Ytrans=0
+
+## Layer 1
+File=C:\Users\pastel\Dropbox\mother-4-game\Binaries\DistortionizerProDeluxeBetaAlpha\Resources\BBG\Rainbowband.png
+Name=Rainbowband
+Mode=1
+Blend=4
+Amplitude=0.04
+Scale=-1.01
+Frequency=0.21
+Compression=0
+Speed=0.06
+Opacity=1
+Xtrans=0.0234
+Ytrans=0
+
+## Layer 2
+File=C:\Users\pastel\Dropbox\mother-4-game\Binaries\DistortionizerProDeluxeBetaAlpha\Resources\BBG\Banding2.png
+Name=Banding2
+Mode=0
+Blend=3
+Amplitude=-0.04
+Scale=2.38
+Frequency=-0.07
+Compression=0
+Speed=0.07
+Opacity=1
+Xtrans=0.0618
+Ytrans=-0.1
+
