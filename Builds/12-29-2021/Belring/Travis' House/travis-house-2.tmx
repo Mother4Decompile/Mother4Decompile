@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="8" tileheight="8" backgroundcolor="#2b0b0b" nextobjectid="2">
+ <properties>
+  <property name="name" value="HomeSweetHome"/>
+  <property name="subtitle" value="homesweethome"/>
+  <property name="title" value="homesweethome"/>
+ </properties>
+ <tileset firstgid="1" source="travis_house2.tsx"/>
+ <layer name="Tile Layer 4" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt0rENgDAMBMDMloJd2H+BUOASlCrKw53kwq5eercGAADAzvo15z39YU/wlr/2BOl9zORP6CM9f0n/p/KVPgBY45i87S4xMwAAwB8MsrUWnA==
+  </data>
+ </layer>
+ <layer name="Tile Layer 1" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt10EOwUAUxvGOI3ABlo7Q2pGoHUdQOxKWnIbTcAGOwQmsvCYjqUjHTM17M+H7kn+abpr+OqsmidvSSHNd6PeFAw44wji6Sj4OR67k43DcAwRHvaOn5ONwTJR8HI6hbqmTuOdwSL7/8x7nUe/AecR1HjHkw9GiLtRZ6NqPyFHdCA44ftyx8pDNptSMyVFu/GUZNdCZtqV2ARy5paOgFjrT9tQhgMO2qsPUkTpF5qiela3jSt0iczQ5jzb9Q3WY/qO+deQOjpQMWaQOl/OYk6FgcphaJ6/fvbxuGjznU9yONHn/9r4NcPynQyI44grDMAzDMAzzuwdKQM7A
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1MtNAmEYheF/WpAORIiW4AV2LkSNlgCoLUAHXNy71A5Q6QG3ggkKPejWSwJe3gQks8FMhn/8EnLe5EkmEyY53wbnlFJKKfXf7SCHvPWQBTvBKc6sh3joHl3rER56xZv1CKWU+qMa6migiXPbObFr4Ro3uEXbdk7s+njEEwYY2s6J3QhjfOIL37ZzZvWmHiJaDZxLYw0ZZIPJexfh23VsJHTH+9RHRHvsLmAfBzgMJu/dnN8XQ45wnNAdSbcdUkHVdk7syiGXuLKd46UO7qxHeOgZL9YjPLTCf0IqsF6xeJvcsLUEdxS5obQEdyj120XoeddshVJKKaWUUsq6HzaGRQw=
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt11eMVFUYB/CZXXbplsQC1gcbLNt3KQkgYOFVsdCL8UER7ApSbFhiA6nSlWIvsdF7k2J7tNG7gLH7qOJvH8hOCMPuzO4dd5LzT365Nzf3fOf7Mmc3M7FYSEhISEi25ZF4LDaK0fHqZw+6f4iHGcHI+KnXzmI2c5jLUO/dxTCGczf3cC/3cT8PJKlV17ym7jzmJ9Sf5X42c5jLq0n2Xs8GNrKJid6bxGSmMJVpvMJ0ZjAzojk2q7uFrQn117vfwEY28VmSvX/kCEc5xlLvLWM5K1jJKlazhrWsi2iOqrSidWJ/9jrCUY7xU5K9z/D8TM7ibHaxmz3sZR/7OcBBDnE4wjm60T2Nde311IGOdKJRTiyWRz6NaUJTmtGcFrTMqefmE3IHdzKeCbzMRCYxmSlMZdpJ6wbqfRCDGUI7PRZSRDEllFJGORVURjjHiSxiMUtYyjKWs4KVrKph/XRmMDPCHmuT7exgJ7vYzR72so/9Naxfw1rWRddirRJ3NnLIrTrr5JFPY5rQNMK/0fpMG322paDqrFNIEcWUUJolc9ygzxvpdYp+e3vWJ0vmOJFyKqikPR3o+L92lF760Z8BDGQQg2tYM8ZnNTZefW0IeZJxPMXTPMOz9DjNmgV6XxivvjaEvM07vMt7vM8HDE2j1up67Ot0yaUReeTXoU6nJM8PcJBDHK5D/ZpSQDsKKaKYEkopq2WNIdyWRDNnrDktaBnheevFTdzMLdxKb/rQN4U6nROuicr0Xk4FlRHOMYrRjGEsj/IYj/NEGvVuP0lfvfejPwMinGMe81nAQl7nDd7krRTqPKfH53mBF3mJ8UzI0P+uLWxlG5/zBV/yFV+nUOdD/X7Ex3zCpyxiMUsyMMvP/MKv/Mbv/MGf/JVCnW/0+i3f8T0/sJ0d7MzAHOfY41zO43xa0ZoLuDCF/f/27j/8y/GqdX4vxckhNwO/nTrbswtduZpudKcH16Qwx2V6vZwruJKraENbCjIwR0h25SJn62Iu4dIG8v0vnVyr9+u4np5ZPEdISEhISEhISEhISN3yH+/3qEM=
+  </data>
+ </layer>
+ <layer name="OVERLAY2" width="50" height="50">
+  <properties>
+   <property name="depth" value="300"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt1csNgkAURuELLfguwRJEERL632AbqGgFHnZuMdHBcL7kZLb/XU2EJOkTXRZxpRvdqacHPbPUy8ZZ5BFLWtGaNrSlXZ562TgFe490opLOVFH9Z3dIkubjkKBvGL7aC7U/evcTuuNdM5E7JEmSJEmSJEmauxcJszke
+  </data>
+ </layer>
+ <layer name="OVERLAY" width="50" height="50">
+  <properties>
+   <property name="depth" value="310"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt0T0KwkAQQOHdK2nUY6iNwd+DaK+Jd9HoYdTr5BULFrGwCKzC++CxMNMMbAiSJEmSpJymMYQZzWN3t2BWfpj/sgENqaARjWmSdkc6UUU1nXMc+KUlrWhNG9rSLu0udKWGbnRP8z1/dYjv9x886Emv3IdIkiRJkiRJktSDFpJLD4Y=
+  </data>
+ </layer>
+ <objectgroup name="objects">
+  <object id="1" name="zack" type="NPC" x="254.25" y="216">
+   <properties>
+    <property name="enabled" value="true"/>
+    <property name="name" value="zack"/>
+    <property name="sprite" value="zack"/>
+    <property name="tele0" value="Union_Smoker_Telepathy,0"/>
+    <property name="text0" value="ZACK_LIGHTBULB,0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,359 @@
+<?xml version="1.0"?>
+<actions>
+  <group name="Control">
+    <action code="PRLN" name="Print to Console" description="Print a line to the console. This is not visible to the player.">
+      <param name="text" description="Print text" type="string" />
+    </action>
+    <action code="WAIT" name="Wait" description="Waits for a given number of frames before executing the next action.">
+      <param name="wait" description="Frames" type="int" />
+    </action>
+    <action code="SFLG" name="Set Flag" description="Sets the value a flag.">
+      <param name="flg" description="Flag ID" type="int" min="0" />
+      <param name="val" description="Value" type="bool" />
+    </action>
+    <action code="SGVL" name="Set a Global Value" description="Set a global value.">
+      <param name="id" description="Value ID" type="int" min="0" />
+      <param name="val" description="Value" type="int" />
+    </action>
+    <action code="AGVL" name="Add to a Global Value" description="Add to a global value.">
+      <param name="id" description="Value ID" type="int" min="0" />
+      <param name="val" description="Add Value" type="int" />
+    </action>
+    <action code="RGVL" name="Randomize a Global Value" description="Set a global value to a random number.">
+      <param name="id" description="Value ID" type="int" min="0" />
+      <param name="min" description="Minimum Value" type="int" />
+      <param name="max" description="Maximum Value" type="int" />
+    </action>
+    <action code="IFFL" name="If Flag" description="If a flag has a given value, then do the following actions up to the associated end-if or else action.">
+      <param name="id" description="Flag ID" type="int" min="0" />
+      <param name="val" description="Value" type="bool" />
+    </action>
+    <action code="IFVL" name="If Global Value" description="If a global value has a given value, then do the following actions up to the associated end-if or else action.">
+      <param name="id" description="Value ID" type="int" min="0" />
+      <param name="op" description="Operator" type="RufiniOption" list="comparisons" />
+      <param name="val" description="Value" type="int" />
+    </action>
+    <action code="IFEN" name="End If" description="Ends an if block." />
+    <action code="ELSE" name="Else" description="Perform the following actions if the previous if condition was not true." />
+    <action code="CALL" name="Call a Script" description="Executes another script.">
+      <param name="scr" description="Script" type="string" />
+    </action>
+    <action code="TIME" name="Set Time" description="Sets the time.">
+      <param name="time" description="Time" type="RufiniOption" list="times" />
+    </action>
+    <action code="SBTL" name="Start Battle" description="Starts a battle with the given enemies.">
+      <param name="type" description="Type" type="RufiniOption" list="battleTypes" />
+      <param name="enm" description="Enemies" type="RufiniArray" list="enemies" />
+      <param name="bgm" description="BGM Override" type="int" min="0" />
+      <param name="bbg" description="BBG Override" type="int" min="0" />
+    </action>
+    <action code="GOMP" name="Go to Map" description="Go to a map with a transition.">
+      <param name="map" description="Map" type="string" />
+      <param name="xto" description="X To" type="int" />
+      <param name="yto" description="Y To" type="int" />
+      <param name="dir" description="Facing Direction" type="int" min="0" max="7" />
+      <param name="trns" description="Transition" type="RufiniOption" list="transitions" />
+      <param name="ext" description="Extend Party" type="bool" />
+      <param name="blk" description="Blocking" type="bool" />
+    </action>
+    <action code="EXIT" name="Exit Script" description="Exits the script when this action is executed." />
+    <action code="CTRL" name="Set Input Control" description="Set how the player can control the game. When the script exits, control is returned to the player.">
+      <param name="mode" description="Mode" type="RufiniOption" list="controlModes" />
+    </action>
+  </group>
+  <group name="Cutscenes">
+    <action code="CTBX" name="Clear Textbox" description="Clears the contents of the textbox." />
+    <action code="STBX" name="Toggle Textbox" description="Shows or hides the textbox.">
+      <param name="text" description="Show" type="bool" />
+    </action>
+    <action code="TXBX" name="Push Text" description="Pushes the following text into the textbox. If the textbox is currently hidden, it will be shown.">
+      <param name="text" description="Text" type="RufiniString" />
+    </action>
+    <action code="QSTN" name="Push Question" description="Pushes a question between the following options into the textbox.">
+      <param name="opt1" description="Option 1" type="RufiniString" />
+      <param name="opt2" description="Option 2" type="RufiniString" />
+    </action>
+    <action code="INPT" name="Push Numeric Input" description="Pushes a numeric input into the textbox.">
+      <param name="min" description="Minimum" type="int" min="0" />
+      <param name="max" description="Maximum" type="int" min="0" />
+    </action>
+    <action code="TCOL" name="Set Text Color" description="Sets the color of the text in the textbox. Only text pushed after this action will be affected.">
+      <param name="col" description="Color" type="Color" />
+    </action>
+    <action code="TSND" name="Set Text Sound" description="Sets the sound the text will make when it's typed in the textbox. Only text pushed after this action will be affected.">
+      <param name="typ" description="Sound" type="RufiniOption" list="textSounds" />
+    </action>
+    <action code="SNPC" name="Set Talking NPC" description="Sets the talking NPC.">
+      <param name="name" description="NPC name" type="string" />
+      <param name="talk" description="Talking" type="bool" />
+    </action>
+    <action code="SNTG" name="Set the Nametag" description="Set the text of the nametag to show.">
+      <param name="text" description="Nametag String" type="RufiniString" />
+    </action>
+    <action code="LTBX" name="Toggle Letterboxing" description="Turns letterboxing on or off.">
+      <param name="lbx" description="Enabled" type="bool"/>
+    </action>
+    <action code="CMOV" name="Move Camera" description="Moves the camera to a position at a given speed.">
+      <param name="x" description="X-coordinate" type="int" />
+      <param name="y" description="Y-coordinate" type="int" />
+      <param name="rel" description="Relative" type="bool" />
+      <param name="spd" description="Speed" type="float" />
+      <param name="mod" description="Mode" type="RufiniOption" list="smoothing" />
+      <param name="blk" description="Blocking" type="bool" />
+    </action>
+    <action code="CFLP" name="Camera Follow Player" description="Sets the camera to follow the player.">
+      <param name="spd" description="Speed" type="float" />
+      <param name="blk" description="Blocking" type="bool" />
+    </action>
+    <action code="CFLN" name="Camera Follow NPC" description="Sets the camera to follow an NPC, or not.">
+      <param name="name" description="Follow NPC Name" type="string" />
+      <param name="spd" description="Speed" type="float" />
+      <param name="blk" description="Blocking" type="bool" />
+    </action>
+  </group>
+  <group name="Player">
+    <action code="PDIR" name="Set Player Direction" description="Change the direction in which the player is facing.">
+      <param name="dir" description="Direction" type="RufiniOption" list="directions" />
+      <param name="spd" description="Turn Speed" type="float" min="0" max="1" />
+    </action>
+    <action code="CSPP" name="Change Player Sprite" description="Change the player's sprite.">
+      <param name="spr" description="Sprite" type="string" />
+      <param name="sub" description="Sub-sprite" type="string" />
+    </action>
+    <action code="CSSP" name="Change Player Sub-sprite" description="Change the player's sub-sprite.">
+      <param name="sub" description="Sub-sprite" type="string" />
+    </action>
+    <action code="RSSP" name="Reset Player Sub-sprite" description="Resets the player's sub-sprite back to automatic control." />
+    <action code="EMPL" name="Show Emoticon on Player" description="Shows an emoticon sprite over the player.">
+      <param name="emt" description="Emotion" type="RufiniOption" list="emoticons" />
+      <param name="blk" description="Blocking" type="bool" />
+    </action>
+    <action code="HPLR" name="Hop Player" description="Makes the player's sprite hop.">
+      <param name="h" description="Height" type="int" min="0" />
+      <param name="col" description="Ignore Collisions" type="bool" />
+    </action>
+    <action code="TSPL" name="Toggle Player Shadow" description="Toggles the player's shadow.">
+      <param name="shw" description="Show Shadow" type="bool" />
+    </action>
+    <action code="PPMV" name="Move Player on Path" description="Takes control from the player and moves them on a path.">
+      <param name="cnstr" description="Path" type="string" />
+      <param name="spd" description="Speed" type="int" min="1" />
+      <param name="snp" description="Snap to Start" type="bool" />
+      <param name="ext" description="Extend Party" type="bool" />
+      <param name="blk" description="Blocking" type="bool" />
+    </action>
+    <action code="MVPL" name="Set Player Position" description="Sets the player's position on the map.">
+      <param name="x" description="X-Coordinate" type="int" />
+      <param name="y" description="Y-Coordinate" type="int" />
+      <param name="dir" description="Direction" type="RufiniOption" list="directions" />
+    </action>
+    <action code="PMOV" name="Move Player" description="Move the player to a given location on the map. Use a speed of 0 to move the player instantaneously.">
+      <param name="x" description="X-coordinate" type="int" />
+      <param name="y" description="Y-coordinate" type="int" />
+      <param name="rel" description="Relative" type="bool" />
+      <param name="spd" description="Speed" type="int" min="0" />
+      <param name="sub" description="Sub-sprite" type="string" />
+      <param name="blk" description="Blocking" type="bool" />
+    </action>
+    <action code="PALC" name="Set Player Animation Loop Count" description="Sets the number of times the player's current animation will loop. A subsprite must be set first.">
+      <param name="lc" description="Loops" type="int" min="1"/>
+    </action>
+  </group>
+  <group name="NPCs">
+    <action code="NALC" name="Set NPC Animation Loop Count" description="Sets the number of times an NPC's current animation will loop. A subsprite must be set first.">
+      <param name="name" description="NPC Name" type="string"/>
+      <param name="lc" description="Loops" type="int" min="1"/>
+    </action>
+    <action code="RSSN" name="Reset NPC Sub-sprite" description="Resets an NPC's sub-sprite back to automatic control.">
+      <param name="name" description="NPC Name" type="string" />
+    </action>
+    <action code="HNPC" name="Hop NPC" description="Makes the NPC's sprite hop.">
+      <param name="name" description="NPC Name" type="string" />
+      <param name="h" description="Height" type="int" min="0" />
+      <param name="col" description="Ignore Collisions" type="bool" />
+    </action>
+    <action code="EMNP" name="Show Emoticon on NPC" description="Shows an emoticon sprite over an NPC.">
+      <param name="name" description="NPC Name" type="string" />
+      <param name="emt" description="Emotion" type="RufiniOption" list="emoticons" />
+      <param name="blk" description="Blocking" type="bool" />
+    </action>
+    <action code="CSSN" name="Change NPC Sub-sprite" description="Change an NPC's sub-sprite.">
+      <param name="name" description="NPC Name" type="string" />
+      <param name="sub" description="Sub-sprite" type="string" />
+    </action>
+    <action code="CSPN" name="Change NPC Sprite" description="Change an NPC's sprite.">
+      <param name="name" description="NPC Name" type="string" />
+      <param name="spr" description="Sprite" type="string" />
+      <param name="sub" description="Sub-sprite" type="string" />
+    </action>
+    <action code="EADD" name="Add NPC" description="Add an NPC on the current map.">
+      <param name="name" description="NPC Name" type="string" />
+      <param name="spr" description="Sprite" type="string" />
+      <param name="sub" description="Sub-sprite" type="string" />
+      <param name="dir" description="Direction" type="RufiniOption" list="directions" />
+      <param name="x" description="X" type="int" />
+      <param name="y" description="Y" type="int" />
+      <param name="mov" description="Move Mode" type="RufiniOption" list="moveModes" />
+      <param name="spd" description="Speed" type="int" min="0" max="100" />
+      <param name="dst" description="Distance" type="int" min="0" />
+      <param name="dly" description="Delay" type="int" min="0" />
+      <param name="cnstr" description="Constraint" type="string" />
+      <param name="cls" description="Collisions" type="bool" />
+      <param name="shdw" description="Shadow" type="bool" />
+      <param name="txt" description="Script" type="string" />
+    </action>
+    <action code="EDEL" name="Remove NPC" description="Delete an NPC from the map.">
+      <param name="name" description="NPC Name" type="string" />
+    </action>
+    <action code="EDIR" name="Set NPC Direction" description="Change the direction in which an NPC is facing.">
+      <param name="name" description="NPC Name" type="string" />
+      <param name="dir" description="Direction" type="RufiniOption" list="directionsWithFacePlayer" />
+      <param name="spd" description="Turn Speed" type="float" min="0" max="1" />
+    </action>
+    <action code="EMOV" name="Move NPC" description="Move an NPC to a given location on the map. Use a speed of 0 to move the NPC instantaneously.">
+      <param name="name" description="NPC Name" type="string" />
+      <param name="x" description="X-coordinate" type="int" />
+      <param name="y" description="Y-coordinate" type="int" />
+      <param name="rel" description="Relative" type="bool" />
+      <param name="spd" description="Speed" type="int" min="0" />
+      <param name="sub" description="Sub-sprite" type="string" />
+      <param name="blk" description="Blocking" type="bool" />
+    </action>
+    <action code="ENMM" name="Set NPC Move Mode" description="Sets the move mode of an NPC.">
+      <param name="name" description="NPC Name" type="string" />
+      <param name="mode" description="Move Mode" type="RufiniOption" list="moveModes" />
+      <param name="spd" description="Speed" type="int" min="0" max="100" />
+      <param name="acl" description="Acceleration" type="float" min="0" max="1" />
+      <param name="dst" description="Distance" type="int" min="0" />
+      <param name="dly" description="Delay" type="int" min="0" />
+      <param name="cnstr" description="Constraint" type="string" />
+    </action>
+    <action code="EDPT" name="Force NPC Depth" description="Forces the depth of the NPC.">
+      <param name="name" description="NPC Name" type="string" />
+      <param name="dpt" description="Depth" type="int" />
+      <param name="rel" description="Relative" type="bool" />
+      <param name="rst" description="Reset Depth" type="bool" />
+    </action>
+  </group>
+  <group name="State and Status">
+    <action code="IADD" name="Add Item" description="Add an item to a character's inventory.">
+      <param name="inv" description="Character" type="RufiniOption" list="characters" />
+      <param name="item" description="Item ID" type="int" min="0" />
+      <param name="msg" description="Show Message" type="bool" />
+      <param name="sfx" description="Play SFX" type="bool" />
+    </action>
+    <action code="IREM" name="Remove Item" description="Remove an item from a character's inventory.">
+      <param name="inv" description="Character" type="RufiniOption" list="characters" />
+      <param name="item" description="Item ID" type="int" min="0" />
+      <param name="msg" description="Show Message" type="bool" />
+      <param name="sfx" description="Play SFX" type="bool" />
+    </action>
+    <action code="MPMK" name="Set Map Mark" description="Set the mark on the player's map.">
+      <param name="map" description="Map" type="string" />
+      <param name="x" description="X-coordinate" type="int" min="0" />
+      <param name="y" description="Y-coordinate" type="int" min="0" />
+    </action>
+    <action code="MPCL" name="Remove Map Mark" description="Clears the mark on the player's map.">
+      <param name="map" description="Map" type="string" />
+    </action>
+    <action code="SMOD" name="Add to Stats" description="Modify a character's stats.">
+      <param name="char" description="Character" type="RufiniOption" list="characters" />
+      <param name="stat" description="Stat" type="RufiniOption" list="stats" />
+      <param name="val" description="Add Value" type="int" />
+    </action>
+    <action code="SSET" name="Set Stats" description="Set a character's stats.">
+      <param name="char" description="Character" type="RufiniOption" list="characters" />
+      <param name="stat" description="Stat" type="RufiniOption" list="stats" />
+      <param name="val" description="New Value" type="int" min="0" />
+    </action>
+    <action code="AMNY" name="Add Money" description="Add to the player's money.">
+      <param name="val" description="Add Value" type="int" />
+      <param name="msg" description="Show Message" type="bool" />
+    </action>
+    <action code="SMNY" name="Set Money" description="Set the player's money.">
+      <param name="val" description="Value" type="int" />
+    </action>
+    <action code="AEXP" name="Add Experience" description="Adds experience to a given character.">
+      <param name="char" description="Character" type="RufiniOption" list="characters" />
+      <param name="val" description="Value" type="int" min="0" />
+      <param name="msg" description="Show Message" type="bool" />
+      <param name="sup" description="Suppress Level-up" type="bool" />
+    </action>
+    <action code="APRT" name="Add Party Member" description="Adds a new member to the party.">
+      <param name="char" description="Character" type="RufiniOption" list="characters" />
+      <param name="name" description="NPC Name" type="string" />
+      <param name="sup" description="Supress Message" type="bool" />
+    </action>
+    <action code="RPRT" name="Remove Party Member" description="Removes a new member from the party.">
+      <param name="char" description="Character" type="RufiniOption" list="characters" />
+      <param name="name" description="NPC Name" type="string" />
+    </action>
+    <action code="STEF" name="Set Status Effect" description="Sets or unsets a persistent status effect.">
+      <param name="char" description="Character" type="RufiniOption" list="characters" />
+      <param name="eff" description="Effect" type="RufiniOption" list="statusEffects" />
+      <param name="en" description="Active" type="bool" />
+    </action>
+  </group>
+  <group name="Effects">
+    <action code="ANIM" name="Show Animation" description="Shows an animation on the map.">
+      <param name="spr" description="Sprite" type="string" />
+      <param name="sub" description="Sub-sprite" type="string" />
+      <param name="x" description="X-coordinate" type="int" min="0" />
+      <param name="y" description="Y-coordinate" type="int" min="0" />
+      <param name="depth" description="Depth" type="int" min="-1" />
+      <param name="blk" description="Blocking" type="bool" />
+    </action>
+    <action code="SSHK" name="Shake Screen" description="Shake the screen with a given intensity and duration.">
+      <param name="pow" description="Intensity" type="int" min="0" />
+      <param name="dur" description="Duration" type="int" min="0" />
+      <param name="x" description="X-axis" type="bool" />
+      <param name="y" description="Y-axis" type="bool" />
+    </action>
+    <action code="WTHR" name="Set Weather" description="Sets the current weather effect.">
+      <param name="eff" description="Type" type="RufiniOption" list="weather" />
+    </action>
+    <action code="SCEF" name="Set Screen Effect" description="Sets the current screen effect.">
+      <param name="eff" description="Type" type="RufiniOption" list="distortion" />
+    </action>
+    <action code="SCFD" name="Fade Screen" description="Fades the screen to a given color in a given amount of time.">
+      <param name="col" description="Color" type="Color" />
+      <param name="dur" description="Duration" type="int" min="0" />
+      <param name="blk" description="Blocking" type="bool" />
+    </action>
+    <action code="SCFL" name="Flash Screen" description="Flashes the screen with a given color for a given time.">
+      <param name="col" description="Color" type="Color" />
+      <param name="tdur" description="Transition Duration" type="int" min="0" />
+      <param name="hdur" description="Hold Duration" type="int" min="0" />
+      <param name="blk" description="Blocking" type="bool" />
+    </action>
+    <action code="IRIS" name="Iris Overlay" description="Overlay the screen with an iris effect. 0 is closed, 1 is open.">
+      <param name="prg" description="Open" type="float" min="0" max="1" />
+      <param name="spd" description="Speed" type="float" min="0" max="1" />
+      <param name="blk" description="Blocking" type="bool" />
+    </action>
+    <action code="FOTX" name="Show Flyover Text" description="Displays text relative to the camera.">
+      <param name="txt" description="Text" type="RufiniString" />
+      <param name="loc" description="Location" type="RufiniOption" list="alignments" />
+      <param name="fnt" description="Font" type="RufiniOption" list="fonts" />
+      <param name="tcol" description="Text Color" type="Color" />
+      <param name="bcol" description="Background Color" type="Color" />
+      <param name="tdur" description="Transition Duration" type="int" min="0" />
+      <param name="hdur" description="Hold Duration" type="int" min="0" />
+      <param name="blk" description="Blocking" type="bool" />
+    </action>
+    <action code="STSP" name="Set Tileset Palette" description="Sets the palette of the map's tileset.">
+      <param name="pal" description="Palette Index" type="int" min="0" max="255" />
+    </action>
+  </group>
+  <group name="Audio">
+    <action code="SBGM" name="Set BGM" description="Sets the BGM.">
+      <param name="bgm" description="BGM Name" type="string" />
+      <param name="loop" description="Loop" type="bool" />
+    </action>
+    <action code="PSFX" name="Play SFX" description="Plays a sound effect.">
+      <param name="sfx" description="SFX Name" type="string" />
+      <param name="loop" description="Loop Count" type="int" min="-1" />
+      <param name="bal" description="Balance" type="float" min="-1" max="1" />
+    </action>
+  </group>
+</actions>

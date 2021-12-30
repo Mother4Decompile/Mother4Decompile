@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="8" tileheight="8" backgroundcolor="#000000" nextobjectid="8">
+ <properties>
+  <property name="name" value="theater"/>
+  <property name="script" value="theater1"/>
+  <property name="subtitle" value="Theater"/>
+  <property name="title" value="Theater"/>
+ </properties>
+ <tileset firstgid="1" source="D:/New folder (5)/theater_set.tsx"/>
+ <layer name="Tile Layer 1" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt2geMFHUcxfHdhaOdUZqAwAFHO6NSLAGOXgz2EhWVohh7i4oKFizPhhWVegrYDb0dPbHGQu+QWGOhFxHsxgJ+hxkSiXu3c4chkLyXfDI4zO9N+P/iLpeQSDiO4ziO4ziO4ziO4ziO4/z/SSKFMiiLLJRDeVRARVRCdnQtSnb4rJgRs6JDdIlO0S3eId6lg/unO/ySg3qojwbIRUM0QmM0QVPkRdei5IXPihkxKzpEl+gU3eIdyvE+MiYfbdEO7dEBHdEJndEFXdEtuhalW/ismBGzokN0iU7RLd6hfO8jY3rgYlyCS9ETvdAbfXAZLkff6FqUvuGzYkbMig7RJTpFt3iHengfGdMPt+MO3In+GIC7cDfuwb0YGF2LMjB8VsyIWdEhukSn6BbvUD/vI2MG41k8h+cxBEMxDMMxAiNREF2LUhA+K2bErOgQXaJTdIt3aLD3kTFP8peeiVwnYTKmYCqmYXpi/8+jTJ9XXMWMmBUdokt0im7xDvEuHeQ/3mGXYB/zuS7AQizCYizB0sT+n0eZPq+4ihkxKzpEl+gU3ZrvfcRKsI91XNdjAzZiEzZjS2L/z6NMn1dcxYyYFR2iS3SKbq3zPmIl2MdurnuC/+DXSaRQBmVRjh/kyqMCKqISslPp73NPzIhZ0aFkcP6gW7u9j1gJ9lEbdVAXOaiH+miAhpxzIzRGEzRFXir9fe6JGTErOkSX6BTd4h3eR4wE+2iF1miDfLRFO7THCSXEjJgVHaJLdIputfI+YiXYRyHXGZiJWZiNOZiLeajMM9fgWlyH63EDbsRNuDnaBc+KGTErOkSX6BTdKvTnVawE+1jGdTlWYCVWYTXWYG0i3MdDeBiP4FE8hkF4HE9E++BZMSNmRYfoEp2iW8u8j1gJ9rGV6zZsx3fYge+xE7sS4Vm/hJfxCl7Fa3gdb+DNaB88K2bErOgQXaJTdGur9xErwT6ygr9HoTwqoCIqIRtH4HRUQVVUQ3UcjRqoiVrRPnhWzIhZ0SG6RKfoVpa/P2Il2Edu8PcoNEJjNEFT5OHYaB/N0Bwt0BIn4iScjFOiffCsmBGzokN0iU7RrVzvI1aCfXRAR3RCZ3RBV3TDqdFZn4EzcRbOxjk4F+fh/OgZnhUzYlZ0iC7RKbrVwfuInZ6cZa80+uKK6KzjfF7xrJhRrzR6ehex05+zHJDGffyMd38qPOs4n1c8K2bE7H/09z5iZwhnORTDMBwjMBIvsIsXU+H3R5zPK54VM2JWdIgu0Sm6NcT7iJ0pnOVUTMN0FGJG9P2x7/u8NwqCHQXnjlEYjTHo86/v8+D7g1nRIbpEp+jWFO8jdhZxlouxBEuxDMuR4v+NMiiLLMzk3izMxhzMxbzk3t8Tz4hnxYyYFR2iS3SKbi3yPjKmO2c8lvMch/GYgImYhMmox+/XRwPkYgX3VmIVVmMN1ib3/p54RjwrZvQW996OvIN38R7eT4bvdNInOJsPOKMP8RE+xnwswEK0Te2lkvqE2cCn+Ayf4wt86X0Um+BsvuKMvsY3+BbrsB4bsBGbsBlbsBXbsB0dme2EHfx6J3ZFfsCP+Ak/4xf8it/wu/dRbIKz+YMz+hN/4W/sxh4E/2gxmQqfKakjcRQqowqqohqqp7yP4hKcTQ3URC0cg9qog7rIKeU+jsPxwc8taIbmaIGW3kex6R6ekTgrcWbi7NSKe63RBvml3EfgtODnFu+jREm3jwu4dyEuQo9S7uJKXIWrvY8SJd0+buHerbgN/Uq5jwfwYCr8R+3eR/yk28dT3Hsaz2BwKfcxCqMxxvsoUdLtYyz3xmE8JhzA98c+3kf8eB+HVryPQysHetal5TiO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO8w8omgUo
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1sENAVEUQNGJtmiCDU3QB5Uo07ezYcNMrsw5BfyXvJu8/GkCAAAAAPit+2YdM/+FHi1L7+Y5T4/3lt6PHp/p0aJHix4terTo0aJHix4terTo0aJHix4terTo0aJHix4terTo0aJHix49xwX3c9ICAFiZ/fj/HPyBMs6jxUWPjOtocdMDiNq+3KfdDLdq7vcBAAAAAAAAAAAAAAAAAAAAAAAAAPjeAwCWPg0=
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1ElqAlEYhVEXkA6SuIZ0oMkeNNG0LkFNZ5o9/EvPHdZQMIpY58A3qqrLg4LX6QAAAAAAAAAAAEB77aX9dJAO01Hj2Tjdp4f0mJ7Sc3pJk8Z7x+kknabu+o+8087SebpIl+mq8ew9faTPtEhf6Tv9pN/Ge73UT9fpZv1Hhq2w7H3FZix7X0Ebua+2i/tqswZpmG7TXRqtsJVvKxuVrcpmZbv+44xtMk2zNE+v6W2FrXxb2ahsVTZr6n8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA7IQ/ElQe+Q==
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object id="1" name="tolobbyA" type="door" x="88.6667" y="379.667" width="31.3333" height="20">
+   <properties>
+    <property name="map" value="belringlobby"/>
+    <property name="xto" value="264"/>
+    <property name="yto" value="248"/>
+   </properties>
+  </object>
+  <object id="2" name="tolobbyB" type="door" x="279.667" y="378" width="32.3333" height="22">
+   <properties>
+    <property name="map" value="belringlobby"/>
+    <property name="xto" value="1798"/>
+    <property name="yto" value="248"/>
+   </properties>
+  </object>
+  <object id="3" name="screen" type="NPC" x="198.5" y="170">
+   <properties>
+    <property name="enabled" value="true"/>
+    <property name="shadow" value="false"/>
+    <property name="sprite" value="screen"/>
+   </properties>
+  </object>
+  <object id="4" name="screen" type="NPC" x="136.33" y="179.33" width="130" height="10">
+   <properties>
+    <property name="enabled" value="true"/>
+    <property name="shadow" value="false"/>
+    <property name="sprite" value="blank"/>
+    <property name="text0" value="check_screen,0"/>
+   </properties>
+  </object>
+  <object id="5" name="lightning" type="Trigger Zone" x="149.333" y="247" width="20.6667" height="20.3333">
+   <properties>
+    <property name="flag" value=""/>
+    <property name="script" value="lightningshake"/>
+   </properties>
+  </object>
+  <object id="7" name="lightning" type="Trigger Area" x="94.6667" y="333.167" width="20.6667" height="20.3333">
+   <properties>
+    <property name="flag" value=""/>
+    <property name="script" value="lightningshake"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

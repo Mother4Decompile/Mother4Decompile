@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="120" tilewidth="8" tileheight="8">
+ <tileset firstgid="1" source="../Tiles/DroppleSet.tsx"/>
+ <layer name="Ground" width="50" height="120">
+  <data encoding="base64" compression="zlib">
+   eJzt1slNw0AYxXFLdgEckSgBxJKeQCLQADdaCU2wb2kDBOTIkX098CLHJBrGjo1xvgn6H36KE1nxex7PeHpxFPUa0EpSO7KYNHONSblQ/ks51fFtAHnKOpQjOZYTuZd3uVKX7cg+X1lP8iwv8jrQ77IvBwHk+615jcOCPOj4Ua51fDOFc2VVmdec3P25cibn0nXOz3rOBtp1SbmWZUXe4nTOfMjnIHv2PLpdrXO71pW1LRuyGei9rjs+rSnu5Y7PVuRnlW/ctX0ZZ6LhulbmfGtFmXzrWtV7ZDFWeX06gXfJu/7o73NJuh8LtYdvHNzfdvW5V+N+WHT4cY7cxek+LPQO7nd3X1zU1Xq9csdi9P67+2Jfbuv8RT188yCk919Rj+/PeDgP8t7fZVn1yHRy9iB1xnoSPVzj3g+WPSyeg7/+T4vnusk5UmWfWzeD1TPl24dU7R3SmhzqugoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP6/L7Lmjfg=
+  </data>
+ </layer>
+ <layer name="Upperground" width="50" height="120">
+  <data encoding="base64" compression="zlib">
+   eJzt021KAlEYhuHD5C4yN6WlLUWXIIg67aRcQtCXS7HW4DNg0F8DG05cF9x/h+flMKVcxvJC3/1L06aUWbpv+l7ye4u0zf42PVR6x+LUf3iPTq3vMb/KO6TxoJRJuk3PfY8602P2P6VdWmX/Om3SdtD3svMcsv8zfaWXbH+tbH/nOpuH6SaNKtz/rfsP7tI0zSq+4+e/0FZ8x1u2v6ePtK/4DgAAAAAAAAAAAAAAAAAAAAAAAAAAoF9HuN0aoA==
+  </data>
+ </layer>
+</map>

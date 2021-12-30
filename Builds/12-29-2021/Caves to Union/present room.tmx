@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="52" tilewidth="8" tileheight="8" nextobjectid="8">
+ <properties>
+  <property name="name" value="presentroom"/>
+  <property name="subtitle" value="presentroom"/>
+  <property name="title" value="present"/>
+ </properties>
+ <tileset firstgid="1" source="../../../../../Music/Winding Railroad Cave/Tilesets/newcave.tsx"/>
+ <layer name="BG" width="50" height="52">
+  <data encoding="base64" compression="zlib">
+   eJzVWEFy2zAMlB25ek5kOT9Kf9Nekt+kr6s9E07g7QIEQDiuDzuUaJPEYgGSwjZN03YjHKGdPyGfM3hS2lsB12n85HMUbN7jwHwZPZg2VXpoGnnbZwO7M/YC8r1aD/RZtEU7ozhO13awWJFrajyeCOakTQhLKw0spzw8GLYiHll9tJzy6tGLdw8OZ/ww0PJGw69zgP7ej+mB8S5zcwfPrE9yeFGA47FtPDJ6zGL8SEwcBJfWdzL+z377ONvwJ6nHJniMxNSpkEdWjzb+Ys86fbVWPLH+w3Sti+YfrX9UD8mDYYVW6z8JvJB510/IfumTKj28Oa31RZ+xr0qPaG7vQZPoM/Zl9JDnBourZmfvDhXl7flfVX6sYl0JzIsoehwbsvmh5fIKYLHO4gT3Ag/vCj2sM7a1Wqx78tg7f0M2P5g/Iy2eOcjL4iAxct/16hHxK3Ls+aBh5L5boUe27X1veuPqFnpE2t73ZlSPal1kLSbz7Z/VQ37PVvo5880vayNRPbR6TPPv66Lj5zJed5GtVT/q6aHVspp/35YvvC7X7+/LeN0FbZV6oFae/LDqVKjBe7EOTA/JCf/bEKlf7aZ/Ndgb81fpY9XfNrEW42eh5Yvloy04ZwbIzcoNxEz6mP/mwJxZMH95fcf2s3vqwfZqFnvMBziXFs+31kOzN+KDyJgetD2oZ0fv7OzFZOT/vbm0mPTYgOdJxL/MhioNsjZY/tV8U5G7GoeoHpaGHt9UxQ+uo43X7n3sLMT9hfmJvWfztreON6Y9XJifNJt7a2f2uei+IN8tbXqcMojsjdZ5wXJX42NxYvnnzZ1IjGIcSVu03LP4WHudlpfZ2GH3QDbWe556eaEe2j3Out9ptmt3kEgcMh5WbaPNx36zni3bMW+18VX5+51oPHox+78C9bi3P0d0YPH2aGD7wCPCyvFHQ7TmcgE7XyxfaPuqdm706oEYU3jH+gtMdhhL
+  </data>
+ </layer>
+ <layer name="lower details" width="50" height="52">
+  <data encoding="base64" compression="zlib">
+   eJzt0zsOQVEURuHT3RHReJuK23ibCh0J0yFhUJZiR6/gbFlfsvr9n9xbiiRJkiTpm3pNKX0a0LD59TWfm3P7gpa0SrxjxO1jOtIp8Y41t2/oSreEO+K/ONMl4f0h/os7PRLtiPfvUJdm1NKEpol2xPvH/Xs60JZ2iXaoXvFdZdY27zJvifszb3hxR13+ZYckSZIkSTV5ApDMGv0=
+  </data>
+ </layer>
+ <layer name="details" width="50" height="52">
+  <data encoding="base64" compression="zlib">
+   eJztmE1OwzAUhF+UNLlGEZwgwKrAESjQU/BTiQNAKadgxwI4ShFd8qOinqMVrBkrqWoqYlySysSaTxopiuznmWcniiJCCCGE1I/dUGQvdO2iPKfIcOZBDkKKuAsy3Wv6aIh8Nlw7W47nINOLpvVYZCN27SxD7+l7xZ4GqPuY1z5E7SOos6Lcq+xpmMyvr7BGH7queK2HIJNijNojQ/0W/Owk3+9N0OepxbNhO+4v7MNzGzqw7M0xMpws5Ghi7prFfH3cE/IMK8x0gbqXUC+e74mJmzzDuZZlbMiwWNM0tiw2/md0c/+3iXnc7KwuU7ssqkev+OZ5y1VEV/M+/CWHK0w5UnjeLPBteie44KccyvsWtP1Pe08IIb4RQammuqK8R5rqSiR+5EjFj3Pl236oDHX+Bai8+7AfhBBCCCGEEDd8AU7WNPM=
+  </data>
+ </layer>
+ <layer name="walls" width="50" height="52">
+  <data encoding="base64" compression="zlib">
+   eJztl8luE0EQhmvGB88cWSWWG8stIS/AcmO5QQKXJAbCTsL6AsFOLhADYd+XF4AEbiCx3IDAheUVWCSWGxC4hM+HYUatsdxheuwg1S998lR3TXVP/T22LKJSzTzNgtnwBJ7CI3iciM15M54pWg1r4Ct8g8/wJRGb82actxr1dXNRZAsc4PogLPJEFsPKgsiqQhyb82bcSY2uYn7+NOrrEGsPwzWur8N69rQB+nmGgUIcm/NmXKZGpejen6jPC1hjoVe/jy8CkQkY8UWqfv3PMrkV+Mj1J3gPH2CIsWF4Ro3nQaIua0w4eI6oz2upuc6r38efrD0JD9jTQ7/+5xi54zAPj+bDHJgL9xi7D9+p8SNI1GWNyQz7fwmvxL7PtnlT9ETIe80e38BbeAceY34Q+/G3rmTz4xf8Fvs+2+a1kdMOU+xdiD3wYQVjHUHsR/QczfZjWSiyPIzPu3n+o7ibWj3QxnV7bf/QAb2MlWAJNZaGrfOjk7W7wvi8m+c/io9T6wR0c09Pbf9QqvWDsSpspMamMOGzIz9s+1wmpxI2rnuInMMp9Y4wdhQG4Vhi3pUftn0eI2fc4jlukHMzpd4txm7DHbibmHflh22f85IrP2z7nJdc+dFqufKj1fpf/eiFEmyFbQ7qtcqPEajCSTjloJ5rP/bBftgOfbADdqbEruXaj0twGU7DKJyBsylxXtoFu2EP7J3Gfa7PeVadg/NwAS5O4z7X59y1ovPcDwPGXPQO9DV7U/+g6DxfgavGXPQOjDZ7UxmU9n3m6r90M5X2fZb1t1elUqlUKpVKpVKpVCqVSqVqpD+JDATk
+  </data>
+ </layer>
+ <objectgroup name="objects">
+  <object id="7" name="door1" type="Door" x="91.75" y="236.5" width="35.5" height="18.5">
+   <properties>
+    <property name="map" value="cave2"/>
+    <property name="xto" value="176"/>
+    <property name="yto" value="120"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

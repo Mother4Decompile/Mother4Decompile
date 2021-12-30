@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="27" height="29" tilewidth="8" tileheight="8" nextobjectid="3">
+ <tileset firstgid="1" source="../Google Drive/mother-4-game/Game construction/Maps/Finished/Interiors - Houses, Shops/Belring Theater/Tilesets/projector room tileset.tsx"/>
+ <layer name="ground" width="27" height="29">
+  <data encoding="base64" compression="zlib">
+   eJzt0McNACAMBEHTB6EnQjcugNA0V4UF1j3mvdJqEFEiIvpehmLU6jCMWhvOA3+9i5CMWhWaUWvCeuAvkRcXZ/F8fQ==
+  </data>
+ </layer>
+ <layer name="walls" width="27" height="29">
+  <data encoding="base64" compression="zlib">
+   eJzt1LEJgDAUhOFEsDbbKFjrNmYpBWfSacTiUB4HBrmkysFr8yH86FydavvrWsG936tWtVKs3dwouCbB6sk3/9mQYC0iKyZYq8jaPizlzoJW8OWs2T8t5rbuoUVmqRrE0CKzVA1iaJFZh9hCi8zqvNZCi9a6mUlsoUVrqf6DdgOx1A1ikVjqBrGNWOoGsZNY6gaxYN7N0SA2m3dzNWh3AT/xTag=
+  </data>
+ </layer>
+ <layer name="trim" width="27" height="29">
+  <data encoding="base64" compression="zlib">
+   eJztlEsOgkAQBZuNcgA/lwHdKx7GD3dCvZOON/FtemGHHjavWZippDZMwiOhMiKFQuHfWMAlPBOsJ7Ya2JK+ewf3mfMLvJK2brDPnA/wTtp6wCfpXVMk+Jlpa1OJbKt5tjrsnJytJmDPa5HZoOK1yGxQ8Vp8wTd5K8l4iyv8xzW5G6/FA54dyVtjLTLvQYttMaJBxbYY0aBiW4xoUEny22JEg4ptMaJBJXcvRvIFGJ0kNw==
+  </data>
+ </layer>
+ <layer name="objects 1" width="27" height="29">
+  <data encoding="base64" compression="zlib">
+   eJzt1LsyA2EYxvF3D6F0iiJ0XAAaQqIURIGOe3B2A0lBqkhNOnG8AS4AjbMSJTouAI2/mcxkm0z23W9mJ8U+M7/JN5Pve59kZ3dFokRpzlzbIje4xR3u7dp3u6z3ULbrn/eTOLr/F46IBRsOXKe254GORzwZdmUxg2FmjyCJUYx5umKsW9Dq1JviLznkscScZaxgFWueuSnWaYwbdp3hHPvMqeAAhzjyzF1nvYFNw65PfDXYc0zHCU6rXW98vuND2d1nifRbujMJV6QHva7u3AI9i8quWTrmMK/oKtKxg5Kya4uObRQUXRd0XOJK2RUk33T84DeErgHeA4MYMnwfhJln7v0XvBo+f37Sxj3Sjg7lMxAkE3RkMBlClyba693J7+9CPMD/0F7vKfZNIxugq1mvd5Tw8wccki76
+  </data>
+ </layer>
+ <layer name="ceiling" width="27" height="29">
+  <data encoding="base64" compression="zlib">
+   eJyrZWRgqB3FVMG0BKN2DQ+7BGlg72Dw16hdlNlFi3SByy5agVG7qG8XrdIFNrtoCUbtGrVrMNo1isnHAFqkfTs=
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object id="2" type="door" x="16.75" y="106.5" width="13.75" height="34"/>
+ </objectgroup>
+</map>

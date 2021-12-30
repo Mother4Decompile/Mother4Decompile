@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="48" height="27" tilewidth="8" tileheight="8" backgroundcolor="#000000" nextobjectid="3">
+ <properties>
+  <property name="name" value="theaterhall"/>
+  <property name="subtitle" value="theaterhall"/>
+  <property name="title" value="theaterhall"/>
+ </properties>
+ <tileset firstgid="1" source="../Google Drive/mother-4-game/Game construction/Maps/Finished/Interiors - Houses, Shops/Belring Theater/Tilesets/projector room tileset.tsx"/>
+ <layer name="ground" width="48" height="27">
+  <data encoding="base64" compression="zlib">
+   eJzt0sENABAUBFH6FhSFolCEVYITP+bwkj3uYYJ3LgAAAByKkiQb3Pt/kSrN4N7/uwyZBjf90A/9vNMD/dja9HO/H+BXC+TB9nc=
+  </data>
+ </layer>
+ <layer name="walls" width="48" height="27">
+  <data encoding="base64" compression="zlib">
+   eJztlMEJgDAQBC8lqA1oN9qAVqM2pU1pExJwMRxEzStZuIFlv/MaESM3dbCq8IWu5m/+5m/+5v9/zYt/X4Df14YX/0XKZ5W4/5bFKI1d4v5HFqM0Ton7ty6LUhKdi/uPBP6TexoE0B4W0CDA0h6ABgGW9gA0CLC0B6BBgKU9AA0KYeuPhq0/Grb+aNj6o2Hrj8b3ZyZZd7/nAgCaQ4k=
+  </data>
+ </layer>
+ <layer name="trimm" width="48" height="27">
+  <data encoding="base64" compression="zlib">
+   eJztlj0OgkAQRpfWn17kMoq94mVQCjqVy/hzJ5V78DWbmM1sM8qOk8xLXjPVC4EvOGcYhmEYhhQTOIXtnzuDc6J/Bde/eBAjU8INca/hIXELhyNsiPsV3hK3cLjDB3F/wlfiFg5v2EtHfMEyc67IpCv4VGjfK+6/oL0L+muZFDbhBmnZHk+4QVq2x0Nt0ALvVK7gu4jtzxa3nYL+2P6ccDsr6I/tj4Z/H4/tjyyf+zMA48syWw==
+  </data>
+ </layer>
+ <layer name="objects1" width="48" height="27">
+  <data encoding="base64" compression="zlib">
+   eJztlrdKBGEUhf/dmQ2mXsFcaGMqFMyxVzAX2pieRMFcKOgm02toYyoUdJPpNbQxFerXObBTXJhFd+A/8MHlnzvnHIZhdpXS0tKSqtyrVAVUQhVUe3PDy047HqV2IeT5PRslYwzGYQImLZlh9iIQ9WR6xTjbg32h1wF7h3Bk4yXVDffeQtzisUrGGqzDBmxaMhPsJSFlk5nm7A7uhV4P7D3Ck4P+XvwMMC2+p8xncA4XcGm55mP2Q8DmPQhylgf5Qq8C5kIocvBOtXJvG7RbPF6Z3+AdPuDTcq2DuRO6bDK7OeuBXqFXH3M/DAj7F0OJYK/OUKoeGqARmozMnVJTqTIzO15SDcKQYG+GjFmYg3lYsMkcpvuIoL/ES6pFWBLshcgIQwSiELPJXKb7iqC/xEuqYzgR7MXJSEASUpB2kJlNr2d4EeyZPFcf+CEAQcFz/guvGr6ztQ6+tf+tKbpPu7j/Ft23Xdz/iu7XLu7/RfdvF/dv5ne6Jcv/X7W0tLS0clc/52xSdQ==
+  </data>
+ </layer>
+ <layer name="ceiling" width="48" height="27">
+  <data encoding="base64" compression="zlib">
+   eJzt18EJADAMA7F08OyeMY6CBP7f1/tm1vL9Rn9Lf0t/S39Lf0t/S39Lf0t/q/6rZmYHYofiaQ==
+  </data>
+ </layer>
+ <objectgroup name="doors">
+  <object id="2" name="tolobby" type="door" x="12" y="123.333" width="9.66667" height="32.6667">
+   <properties>
+    <property name="map" value="belringlobby"/>
+    <property name="xto" value="480"/>
+    <property name="yto" value="296"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="Tile Layer 6" width="48" height="27">
+  <data encoding="base64" compression="zlib">
+   eJztztkJwCAABNEFrSNHTzl6ytGn0SayLQgBMcyD+R8JAIDvpSA9LrsSWt/UG6I0usnNsfVNvcXPq9vc3uH/4efTXe7u8B8AAAD4kxfWxwfl
+  </data>
+ </layer>
+</map>

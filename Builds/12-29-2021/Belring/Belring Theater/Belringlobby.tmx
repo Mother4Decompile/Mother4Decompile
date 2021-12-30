@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="8" tileheight="8" nextobjectid="15">
+ <properties>
+  <property name="name" value="Belringlobby"/>
+  <property name="subtitle" value="belringlobby"/>
+  <property name="title" value="belringlobby"/>
+ </properties>
+ <tileset firstgid="1" name="blritheat" tilewidth="8" tileheight="8" tilecount="3840" columns="80">
+  <image source="../Google Drive/mother-4-game/Game construction/Maps/Finished/Interiors - Houses, Shops/Belring Theater/Images/blritheat.png" trans="ff00ff" width="640" height="384"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1LENwkAQRNGLcD1AhUClQCNcNgmBw7HvPWmkTTf5YwAAAAAAAAAAAPz3vozxmftejnmfzXUb4zZ33455n81j/vSce23HvM+moTl6FQ3N0atoaI5eRUNz9CoamqNX0dAcvYqG5uhVNDRHr6KhOXoVDc3Rq2hojl5FQ3P0Khqao1fR0By9iobm6FU0NEevoqE5ehUNzdGraGiOXkVDc/QqGpqzeq8aOqNX0dAZvYqGzuhVNHRGr6KhM3oVDZ3Rq2jozCot2qOhM6u0aI+GzqzSIgAAAAAAAAAAAAAAAAAAAABgXT9LpW7O
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt18lNAzEYhmFLCSg5sjaAgAqATiiAJexHoAKgE0qgE6AO1jNfxHVO1kgm5Hmk9ziS5V/2yKUAAAAAAAAAAAAAAADMhp1RKbuV7Y1ar/7/ucue3lf2YB69M4+/5Tl7+lLZq3n0bnNcylZl2+PWq/9/pudjY1yX89G/6fmo/X84H/27zp7epINBKYfpKB2nSTpJp+ksnaeLdJmuBr/f3JoHM2ppWMpyWkmraS2tD1uvan513fcT82im673wZB7NdL0XFhdar2p+dd1X++bRTNd99Wgezbxl79/TR/pMX+nbPAAAAAAAAAAAAAAAAAAAAAAAAAAAoMoPt8JRaQ==
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1"/>
+ <layer name="Collisions" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer name="Tile Layer 4" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1OlSjnEYgPGn92VGZWtxAMgBtM1okWwzVMo6o0ILHYDiAFTOwZZCZtq0iAMgDgA5gFIzCFkyg0SXg3jn37zv9Zvn+vZ8uOe+Z/5RJEmSJEmSJEmSJEmSJEmSJElaazZQOmVQJm2kTbSZttBWyqJsyqFc2hZk0tRwhuqpgRrpLJ2j89REzdRCrXSBLlJbiEFTxAAN0hAN0wg9pFEao3GaoEc0SY/pSZBJU8NP+kW/aZn+0Ar9pX//f0jjoxjFaR2tTws2btI7zG6PUBVVUw0dpVqqo2N0nE7QSTpFp71HwlxntzfoJt2i29RDd6iX+ugu3aP71E8PvEfCvGO37+kDLdBH+kSfaZG+0Ff6Rt9piX54j4TZHYuiEiqlMiqnPVRBe6mS9tF+OkAH6VAs9NSSksUM7/ssvaU5mve9Dyqf972ACqmIin3vg7rK/jupi7rpmvcI6iX7f0WvaZreeI+gtsejaAftpDzaFQ89UWq7xP7bqYMu0xXvEdRT9v+Mpug5vfAekiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkpLEKk9zSE4=
+  </data>
+ </layer>
+ <layer name="Tile Layer 7" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer name="Tile Layer 5" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt2CdSRFEURdHb/XsqoIgCFNETBwWK6ImDAkX0RE86s3if6rWqtn91j3tVAAAAAAAAAAAAANBfX4Oq7/STflMNqwbD1q8aXxu5/WbaSttpJ+3ao5mz3P48XaTLdJWu7dHMS27/mt7Se/pIn/ZoZqmrWk4raTWtpfWu9avG10Fuf5iO0nE6Saf2aOYut79PD+kxPaVnezQzNaqaTjNpNs2l+VHrVwEAAEC/LXRVi/4zemMvW+zbozdussWtPXpjYlQ16b8PAAAAAAAAAAAAAAAAAAAAAAAAAODf+gOqBR45
+  </data>
+ </layer>
+ <layer name="doors" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt0TWulQEQgNH7CC4dLh0uu8Glw6XDZTe4dLh0uOwGl4RvAzc07w/JzTnJ184kM6MRAAAAAAAAAADAv62tdbW+NtTGAXZsqs21pbbWtgF2TIrTdabO1rk6P8COC3WxLtXlujLAjknxsl7V63pTbwfY8a7e14f6WJ8G2DEpFk+NRktqaS2r5VPTv2NFM1fWqlpdawbYMSkOdptDdbiO1NEBbnWsmcfrRJ2sU/4x1v1u86Ae1qN6PMCtnjTzaT2r5/XCP8aaOWM0mlWza07NnTH9O+Y1c34tqIW1aIAdk2J7t9lRO2tX7R7gVnuaubf21f464B9jXe021+p63aibA9zqVjNv1526W/f8Y6zP3eZLfa1v9X2AW/1o5s/6Vb/rj38AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/ZX7E1LuE=
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 2">
+  <object id="2" name="dooooor" type="door" x="502" y="286.364" width="14" height="32.9091">
+   <properties>
+    <property name="map" value="theaterhall"/>
+    <property name="xto" value="32"/>
+    <property name="yto" value="136"/>
+   </properties>
+  </object>
+  <object id="3" name="belringdooooor" type="door" x="452.667" y="224" width="30" height="16">
+   <properties>
+    <property name="map" value="totheaterB"/>
+    <property name="xto" value="34"/>
+    <property name="yto" value="44"/>
+   </properties>
+  </object>
+  <object id="4" name="totheaterA" type="door" x="252.667" y="222.333" width="31" height="17.3333">
+   <properties>
+    <property name="map" value="theater"/>
+    <property name="xto" value="96"/>
+    <property name="yto" value="360"/>
+   </properties>
+  </object>
+  <object id="6" name="belringdoor" type="door" x="224.333" y="442" width="31.6667" height="17.6667">
+   <properties>
+    <property name="map" value="belring"/>
+    <property name="xto" value="2232"/>
+    <property name="yto" value="2552"/>
+   </properties>
+  </object>
+  <object id="7" name="zacktrigger" type="Trigger Area" x="245.75" y="240.75" width="57.75" height="12.75">
+   <properties>
+    <property name="flag" value=""/>
+    <property name="script" value="theater2"/>
+   </properties>
+  </object>
+  <object id="8" name="zack" type="npc" x="381.67" y="408.67">
+   <properties>
+    <property name="direction" value="face player"/>
+    <property name="enabled" value="true"/>
+    <property name="name" value="zack"/>
+    <property name="sprite" value="zack"/>
+   </properties>
+  </object>
+  <object id="9" name="person" type="npc" x="361.33" y="387.67">
+   <properties>
+    <property name="enabled" value="true"/>
+    <property name="name" value="person"/>
+    <property name="sprite" value="youngsterB"/>
+   </properties>
+  </object>
+  <object id="11" name="travispath" type="NPC Path" x="272" y="264">
+   <polyline points="0,0 0,40 48,88 48,104 56,112"/>
+  </object>
+  <object id="13" name="zacktrigger" type="Trigger Area" x="433.46" y="238.625" width="57.75" height="12.75">
+   <properties>
+    <property name="flag" value=""/>
+    <property name="script" value="theater2"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
