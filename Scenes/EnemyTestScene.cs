@@ -42,6 +42,8 @@ namespace Mother4.Scenes
 		{
 			if (this.selectedList != null)
 			{
+				// this shit sucks
+
 				this.selectedList.Focused = false;
 				this.selectedList.ShowSelectionRectangle = false;
 				this.selectedList.UseHighlightTextColor = false;
