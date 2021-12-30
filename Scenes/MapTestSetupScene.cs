@@ -40,12 +40,12 @@ namespace Mother4.Scenes
 			};
 			this.optionList = new ScrollingList(new Vector2f(32f, 80f), 0, items, 5, 16f, 80f, Paths.GRAPHICS + "cursor.dat");
 			this.optionList.ShowSelectionRectangle = false;
-			this.optionList.UseHighlightTextColor = false;
+			this.optionList.UseHighlightTextColor = true;
 			this.pipeline.Add(this.optionList);
 			this.focusedList = this.optionList;
 			this.mapList = new ScrollingList(new Vector2f(32f, 80f), 0, this.mapItems, 5, 16f, 256f, Paths.GRAPHICS + "cursor.dat");
 			this.mapList.ShowSelectionRectangle = false;
-			this.mapList.UseHighlightTextColor = false;
+			this.mapList.UseHighlightTextColor = true;
 			this.pipeline.Add(this.mapList);
 			this.mapList.Hide();
 			List<CharacterType> allCharacterTypes = CharacterFile.Instance.GetAllCharacterTypes();
@@ -60,7 +60,7 @@ namespace Mother4.Scenes
 			this.ResetCharacterGraphics();
 			this.charactersList = new ScrollingList(new Vector2f(32f, 80f), 0, array, 5, 16f, 256f, Paths.GRAPHICS + "cursor.dat");
 			this.charactersList.ShowSelectionRectangle = false;
-			this.charactersList.UseHighlightTextColor = false;
+			this.charactersList.UseHighlightTextColor = true;
 			this.pipeline.Add(this.charactersList);
 			this.charactersList.Hide();
 			string[] items2 = new string[]
@@ -71,7 +71,7 @@ namespace Mother4.Scenes
 			};
 			this.settingsList = new ScrollingList(new Vector2f(32f, 80f), 0, items2, 5, 16f, 256f, Paths.GRAPHICS + "cursor.dat");
 			this.settingsList.ShowSelectionRectangle = false;
-			this.settingsList.UseHighlightTextColor = false;
+			this.settingsList.UseHighlightTextColor = true;
 			this.pipeline.Add(this.settingsList);
 			this.settingsList.Hide();
 			this.titleText = new TextRegion(new Vector2f(4f, 4f), 0, Fonts.Title, "Map Test Setup");
