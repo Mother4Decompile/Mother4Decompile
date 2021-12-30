@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mother4", "Mother4.csproj", "{E566045E-56CA-4ADF-820D-C585D9D9C215}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carbine", "Engine\Carbine.csproj", "{3F465001-29A5-48AC-A20F-0E7DFDF16B98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,6 +17,10 @@ Global
 		{E566045E-56CA-4ADF-820D-C585D9D9C215}.Debug|x86.Build.0 = Debug|x86
 		{E566045E-56CA-4ADF-820D-C585D9D9C215}.Release|x86.ActiveCfg = Release|x86
 		{E566045E-56CA-4ADF-820D-C585D9D9C215}.Release|x86.Build.0 = Release|x86
+		{3F465001-29A5-48AC-A20F-0E7DFDF16B98}.Debug|x86.ActiveCfg = Debug|x86
+		{3F465001-29A5-48AC-A20F-0E7DFDF16B98}.Debug|x86.Build.0 = Debug|x86
+		{3F465001-29A5-48AC-A20F-0E7DFDF16B98}.Release|x86.ActiveCfg = Release|x86
+		{3F465001-29A5-48AC-A20F-0E7DFDF16B98}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

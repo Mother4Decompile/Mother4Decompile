@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{3F465001-29A5-48AC-A20F-0E7DFDF16B98}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Carbine</RootNamespace>
+    <AssemblyName>Carbine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FMOD">
+      <HintPath>D:\OddityPrototypes\Mother 4 -- 2018\FMOD.dll</HintPath>
+    </Reference>
+    <Reference Include="fNbt">
+      <HintPath>D:\OddityPrototypes\Mother 4 -- 2018\fNbt.dll</HintPath>
+    </Reference>
+    <Reference Include="sfmlnet-graphics-2">
+      <HintPath>D:\OddityPrototypes\Mother 4 -- 2016\sfmlnet-graphics-2.dll</HintPath>
+    </Reference>
+    <Reference Include="sfmlnet-system-2">
+      <HintPath>D:\OddityPrototypes\Mother 4 -- 2018\sfmlnet-system-2.dll</HintPath>
+    </Reference>
+    <Reference Include="sfmlnet-window-2">
+      <HintPath>D:\OddityPrototypes\Mother 4 -- 2018\sfmlnet-window-2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing">
+      <HintPath>D:\Steam\steamapps\common\Streets of Rogue\StreetsOfRogue_Data\Managed\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actors\Actor.cs" />
+    <Compile Include="Actors\ActorManager.cs" />
+    <Compile Include="Actors\SolidActor.cs" />
+    <Compile Include="Audio\AudioManager.cs" />
+    <Compile Include="Audio\AudioMode.cs" />
+    <Compile Include="Audio\AudioType.cs" />
+    <Compile Include="Audio\CarbineSound.cs" />
+    <Compile Include="Audio\fmod\FmodAudioLoader.cs" />
+    <Compile Include="Audio\fmod\FmodAudioManager.cs" />
+    <Compile Include="Audio\fmod\FmodException.cs" />
+    <Compile Include="Audio\fmod\FmodSound.cs" />
+    <Compile Include="Audio\Stub\StubAudioManager.cs" />
+    <Compile Include="Audio\Stub\StubSound.cs" />
+    <Compile Include="Collision\AABB.cs" />
+    <Compile Include="Collision\CollisionContext.cs" />
+    <Compile Include="Collision\CollisionManager.cs" />
+    <Compile Include="Collision\CollisionQuadtree.cs" />
+    <Compile Include="Collision\ICollidable.cs" />
+    <Compile Include="Collision\Mesh.cs" />
+    <Compile Include="Collision\PlaceFreeContext.cs" />
+    <Compile Include="Collision\SolidStatic.cs" />
+    <Compile Include="Collision\SpatialHash.cs" />
+    <Compile Include="Collision\Triangle.cs" />
+    <Compile Include="Engine.cs" />
+    <Compile Include="Flags\FlagManager.cs" />
+    <Compile Include="Flags\ValueManager.cs" />
+    <Compile Include="Graphics\AnimatedRenderable.cs" />
+    <Compile Include="Graphics\ColorBlendMode.cs" />
+    <Compile Include="Graphics\FullColorTexture.cs" />
+    <Compile Include="Graphics\Graphic.cs" />
+    <Compile Include="Graphics\GraphicGroup.cs" />
+    <Compile Include="Graphics\ICarbineTexture.cs" />
+    <Compile Include="Graphics\IndexedColorGraphic.cs" />
+    <Compile Include="Graphics\IndexedTexture.cs" />
+    <Compile Include="Graphics\MultipartAnimation.cs" />
+    <Compile Include="Graphics\Renderable.cs" />
+    <Compile Include="Graphics\RenderPipeline.cs" />
+    <Compile Include="Graphics\ShapeGraphic.cs" />
+    <Compile Include="Graphics\SpriteDefinition.cs" />
+    <Compile Include="Graphics\TextureManager.cs" />
+    <Compile Include="Graphics\TiledBackground.cs" />
+    <Compile Include="Graphics\ViewManager.cs" />
+    <Compile Include="GUI\FontData.cs" />
+    <Compile Include="GUI\TextRegion.cs" />
+    <Compile Include="GUI\WindowBox.cs" />
+    <Compile Include="Input\Button.cs" />
+    <Compile Include="Input\InputManager.cs" />
+    <Compile Include="Maps\Map.cs" />
+    <Compile Include="Maps\MapLoader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scenes\EmptySceneStackException.cs" />
+    <Compile Include="Scenes\ErrorScene.cs" />
+    <Compile Include="Scenes\Scene.cs" />
+    <Compile Include="Scenes\SceneManager.cs" />
+    <Compile Include="Scenes\Transitions\ColorFadeTransition.cs" />
+    <Compile Include="Scenes\Transitions\InstantTransition.cs" />
+    <Compile Include="Scenes\Transitions\ITransition.cs" />
+    <Compile Include="Tiles\Tile.cs" />
+    <Compile Include="Tiles\TileGroup.cs" />
+    <Compile Include="Utility\ColorHelper.cs" />
+    <Compile Include="Utility\DictionaryExtensions.cs" />
+    <Compile Include="Utility\Digits.cs" />
+    <Compile Include="Utility\EmbeddedResources.cs" />
+    <Compile Include="Utility\GaussianRandom.cs" />
+    <Compile Include="Utility\Hash.cs" />
+    <Compile Include="Utility\IconFile.cs" />
+    <Compile Include="Utility\Quadtree.cs" />
+    <Compile Include="Utility\Rectangle.cs" />
+    <Compile Include="Utility\TimerManager.cs" />
+    <Compile Include="Utility\VectorMath.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\openSansPX.ttf" />
+    <EmbeddedResource Include="Resources\pal.frag" />
+    <EmbeddedResource Include="Resources\pal.vert" />
+    <EmbeddedResource Include="Resources\text.frag" />
+    <EmbeddedResource Include="Resources\text.vert" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
