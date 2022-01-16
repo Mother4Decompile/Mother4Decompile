@@ -139,4 +139,7 @@
     <EmbeddedResource Include="Resources\text.vert" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if "$(Username)" == "kurog" copy /Y "$(TargetPath)" "E:\Mother4Decompile\bin\Debug\"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

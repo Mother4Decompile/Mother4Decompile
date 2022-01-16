@@ -25,6 +25,7 @@ namespace Mother4
 				AudioManager.Instance.MusicVolume = Settings.MusicVolume;
 				AudioManager.Instance.EffectsVolume = Settings.EffectsVolume;
 				PsiFile.Load();
+				Engine.ScreenScale = 6;
 				CharacterFile.Load();
 				EnemyFile.Load();
 				Scene newScene = new TitleScene();
