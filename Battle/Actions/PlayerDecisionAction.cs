@@ -163,20 +163,23 @@ namespace Mother4.Battle.Actions
 						targets = selectionState.Targets
 					});
 					break;
-				case SelectionState.SelectionType.PSI:
-					actionParams = new ActionParams?(this.BuildPsiActionParams(selectionState, num));
-					break;
-				case SelectionState.SelectionType.Talk:
-					actionParams = new ActionParams?(new ActionParams
-					{
-						actionType = typeof(FloydTalkAction),
-						controller = this.controller,
-						sender = this.combatant,
-						priority = num,
-						targets = selectionState.Targets
-					});
-					break;
-				case SelectionState.SelectionType.Guard:
+					case SelectionState.SelectionType.PSI:
+						actionParams = new ActionParams?(this.BuildPsiActionParams(selectionState, num));
+						break;
+					case SelectionState.SelectionType.Talk:
+						actionParams = new ActionParams?(this.BuildPsiActionParams(selectionState, num));
+						break;
+					/*actionParams = new ActionParams?(new ActionParams
+									{
+										actionType = typeof(FloydTalkAction),
+										controller = this.controller,
+										sender = this.combatant,
+										priority = num,
+										targets = selectionState.Targets
+									});
+									break;.*/
+
+					case SelectionState.SelectionType.Guard:
 					actionParams = new ActionParams?(new ActionParams
 					{
 						actionType = typeof(MessageAction),

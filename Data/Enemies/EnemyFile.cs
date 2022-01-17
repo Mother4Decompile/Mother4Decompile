@@ -90,8 +90,17 @@ namespace Mother4.Data.Enemies
 		public EnemyData GetData(EnemyType type)
 		{
 			EnemyData result = null;
+			int lol = 2042876438;
+			if (type.Identifier == 69) {
+
+			}
 			if (!this.enemyDataDict.TryGetValue(type.Identifier, out result))
 			{
+				foreach (var s in enemyDataDict.Keys)
+				{
+					Console.WriteLine(s);
+				} //mock id: 2042876438
+				Console.Write(type.Identifier);
 				throw new ArgumentException("Enemy type is not present in the enemy file.");
 			}
 			return result;

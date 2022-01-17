@@ -96,6 +96,7 @@ namespace Mother4.Battle.Actions
 		{
 			if (this.messageStack.Count > 0)
 			{
+
 				string message = this.messageStack.Pop();
 				this.controller.InterfaceController.ClearTextBox();
 				this.controller.InterfaceController.ShowTextBox(message, true);
@@ -109,7 +110,8 @@ namespace Mother4.Battle.Actions
 			int num;
 			if (this.comboCount == 0)
 			{
-				num = -BattleCalculator.CalculatePhysicalDamage(this.power, this.combatant, target, out smash);
+				smash = true;
+				num = -5000;//BattleCalculator.CalculatePhysicalDamage(this.power, this.combatant, target, out smash);
 				this.firstHpDelta = num;
 				this.statDelta.HP = num;
 			}

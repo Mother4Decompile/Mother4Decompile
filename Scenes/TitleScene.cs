@@ -14,6 +14,8 @@ using Mother4.Data;
 using Mother4.Data.Psi;
 using Mother4.GUI;
 using Mother4.GUI.Modifiers;
+using Mother4.Overworld;
+using Mother4.Scenes.Transitions;
 using Rufini.Strings;
 using SFML.Graphics;
 using SFML.System;
@@ -147,13 +149,15 @@ namespace Mother4.Scenes
 					case Button.Eight:
 
 							Engine.ScreenScale = 6;
-							SceneManager.Instance.Transition = new ColorFadeTransition(0.25f, Color.Black);
+							SceneManager.Instance.Transition = new BattleSwirlTransition(BattleSwirlOverlay.Style.Boss);
 							PartyManager.Instance.AddAll(new CharacterType[]
 {
-					CharacterType.Travis,
-					CharacterType.Floyd,
-					CharacterType.Meryl
-}); SceneManager.Instance.Push(new BattleScene(new EnemyType[] { EnemyType.AtomicPowerRobo, EnemyType.Flamingo }, true));
+					CharacterType.Travis
+});
+							SceneManager.Instance.Push(new BattleScene(new EnemyType[]
+							{
+						EnemyType.ModernMind
+							}, false));
 							 break;
 					default:
 						return;

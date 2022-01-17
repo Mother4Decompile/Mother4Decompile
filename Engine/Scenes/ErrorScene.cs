@@ -23,12 +23,14 @@ namespace Carbine.Scenes
 			this.title = new TextRegion(new Vector2f(16f, 8f), 0, Engine.DefaultFont, "An unhandled exception has occurred.");
 			this.message = new TextRegion(new Vector2f(16f, 32f), 0, Engine.DefaultFont, "Dave is obviously an incompetent programmer.");
 			this.pressenter = new TextRegion(new Vector2f(16f, 48f), 0, Engine.DefaultFont, "Press Enter/Start to exit.");
+			TextRegion fuckthisgame = new TextRegion(new Vector2f(16f, 64f), 0, Engine.DefaultFont, "This game fucking sucks.");
 			this.exceptionDetails = new TextRegion(new Vector2f(16f, 80f), 0, Engine.DefaultFont, string.Format("{0}\nSee error.log for more details.", ex.Message));
 			this.pipeline = new RenderPipeline(Engine.FrameBuffer);
 			this.pipeline.Add(this.title);
 			this.pipeline.Add(this.message);
 			this.pipeline.Add(this.pressenter);
-			
+			this.pipeline.Add(fuckthisgame);
+
 			this.pipeline.Add(this.exceptionDetails);
 		}
 

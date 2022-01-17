@@ -113,6 +113,7 @@ namespace Mother4.Battle.Actions
 			Tuple<Combatant, StatSet> tuple = this.statSets.Pop();
 			tuple.Item1.AlterStats(tuple.Item2);
 			this.controller.InterfaceController.AddDamageNumber(tuple.Item1, tuple.Item2.HP);
+			
 			if (tuple.Item1 is PlayerCombatant)
 			{
 				this.controller.InterfaceController.SetCardSpring(tuple.Item1.ID, BattleCard.SpringMode.Normal, new Vector2f(0f, 8f), new Vector2f(0f, 0.5f), new Vector2f(0f, 0.95f));

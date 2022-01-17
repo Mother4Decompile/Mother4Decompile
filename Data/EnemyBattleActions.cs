@@ -11,8 +11,29 @@ namespace Mother4.Data
 		// Token: 0x060002AB RID: 683 RVA: 0x00010C10 File Offset: 0x0000EE10
 		public static List<ActionParams> GetBattleActionParams(EnemyType enemy)
 		{
-			EnemyData data = EnemyFile.Instance.GetData(enemy);
-			return data.GetActionParams();
+			List<ActionParams> param = new List<ActionParams>();
+
+				param.Add(new ActionParams
+				{
+					actionType = typeof(EnemyBashAction),
+					data = new object[]
+						{
+							2f
+						}
+				});
+				param.Add(new ActionParams
+				{
+					actionType = typeof(EnemyProjectileAction),
+					data = new object[]
+						{
+							"a comet",
+							850
+						}
+				});
+				
+			
+			return param;
+
 		}
 
 		// Token: 0x0400041C RID: 1052
@@ -20,7 +41,7 @@ namespace Mother4.Data
 		{
 			{
 				EnemyType.Dummy,
-				new List<ActionParams>
+								new List<ActionParams>
 				{
 					new ActionParams
 					{
@@ -155,15 +176,7 @@ namespace Mother4.Data
 				EnemyType.ModernMind,
 				new List<ActionParams>
 				{
-					new ActionParams
-					{
-						actionType = typeof(EnemyProjectileAction),
-						data = new object[]
-						{
-							"a comet",
-							850
-						}
-					}
+
 				}
 			},
 			{

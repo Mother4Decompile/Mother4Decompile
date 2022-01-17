@@ -74,6 +74,7 @@ namespace Mother4.Scenes
 			this.extendParty = extendParty;
 			this.collisionResults = new ICollidable[8];
 			this.initialized = false;
+			rainOverlay = new RainOverlay();
 		}
 
 		// Token: 0x06000667 RID: 1639 RVA: 0x000270B7 File Offset: 0x000252B7

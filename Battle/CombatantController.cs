@@ -46,7 +46,7 @@ namespace Mother4.Battle
 		// Token: 0x06000495 RID: 1173 RVA: 0x0001DF9A File Offset: 0x0001C19A
 		public int Add(Combatant c)
 		{
-			c.ID = this.uidCounter;
+			c.ID = this.uidCounter;	
 			this.combatants.Add(this.uidCounter, c);
 			this.uidCounter++;
 			return c.ID;
