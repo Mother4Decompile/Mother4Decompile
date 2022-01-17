@@ -123,7 +123,7 @@ namespace Mother4.Scenes
 				return;
 			case 4:
 				(this.focusedList = this.scaleList).Show();
-				this.scaleList.SelectedIndex = (int)(Engine.ScreenScale - 1U);
+					this.scaleList.SelectedIndex = 6;
 				return;
 			case 5:
 				(this.focusedList = this.fullscreenList).Show();
@@ -438,6 +438,8 @@ namespace Mother4.Scenes
 			"3x",
 			"4x",
 			"5x",
+			"6x",
+			"7x",
 			"Back"
 		};
 

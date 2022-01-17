@@ -28,6 +28,7 @@ namespace Carbine.Scenes
 			this.pipeline.Add(this.title);
 			this.pipeline.Add(this.message);
 			this.pipeline.Add(this.pressenter);
+			
 			this.pipeline.Add(this.exceptionDetails);
 		}
 

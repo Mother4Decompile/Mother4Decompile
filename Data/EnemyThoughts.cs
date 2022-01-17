@@ -13,16 +13,7 @@ namespace Mother4.Data
 		public static string GetLike(EnemyType enemy)
 		{
 			string result = string.Empty;
-			EnemyData data = EnemyFile.Instance.GetData(enemy);
-			string qualifiedName;
-			if (data.TryGetStringQualifiedName("thoughts", out qualifiedName))
-			{
-				RufiniString rufiniString = StringFile.Instance.Get(qualifiedName);
-				if (rufiniString.Value != null)
-				{
-					result = rufiniString.Value;
-				}
-			}
+			likes.TryGetValue(enemy, out result);
 			return result;
 		}
 

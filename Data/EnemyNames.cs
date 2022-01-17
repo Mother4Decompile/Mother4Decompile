@@ -1,4 +1,5 @@
 ﻿using System;
+using Carbine.Utility;
 using Mother4.Data.Enemies;
 using Mother4.Scripts.Actions.ParamTypes;
 using Rufini.Strings;
@@ -28,8 +29,61 @@ namespace Mother4.Data
 		// Token: 0x06000583 RID: 1411 RVA: 0x00021714 File Offset: 0x0001F914
 		public static string GetName(EnemyType enemy)
 		{
-			EnemyData data = EnemyFile.Instance.GetData(enemy);
-			return EnemyNames.GetStringOrDefault(data, "name", "DUMMY");
+	
+			//...this is shit for performance, but fuck off
+			if (enemy.Identifier == Hash.Get("test.Dummy"))
+			{
+				return "Dummy";
+			}
+			if (enemy.Identifier == Hash.Get("test.MagicSnail"))
+			{
+				return "Magic Snail";
+			}
+			if (enemy.Identifier == Hash.Get("test.Rat"))
+			{
+				return "Rat";
+			}
+			if (enemy.Identifier == Hash.Get("test.HermitCan"))
+			{
+				return "Hermit Can";
+			}
+			if (enemy.Identifier == Hash.Get("test.Flamingo"))
+			{
+				return "Flamingo";
+			}
+			if (enemy.Identifier == Hash.Get("test.AtomicPowerRobo"))
+			{
+				return "Atomic Power Robo";
+			}
+			if (enemy.Identifier == Hash.Get("test.CarbonPup"))
+			{
+				return "Carbon Pup";
+			}
+			if (enemy.Identifier == Hash.Get("test.MeltyRobot"))
+			{
+				return "Melty Robot";
+			}
+			if (enemy.Identifier == Hash.Get("test.ModernMind"))
+			{
+				return "Modern Mind";
+			}
+			if (enemy.Identifier == Hash.Get("test.NotSoDeer"))
+			{
+				return "Not So Deer";
+			}
+			if (enemy.Identifier == Hash.Get("test.PunkAssassin"))
+			{
+				return "Punk Assassin";
+			}
+			if (enemy.Identifier == Hash.Get("test.PunkEnforcer"))
+			{
+				return "Punk Enforcer";
+			}
+			if (enemy.Identifier == Hash.Get("test.RatDispenser"))
+			{
+				return "Rat Dispenser";
+			}
+			return "idk";
 		}
 
 		// Token: 0x06000584 RID: 1412 RVA: 0x00021740 File Offset: 0x0001F940

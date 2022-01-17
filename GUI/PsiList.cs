@@ -160,7 +160,7 @@ namespace Mother4.GUI
             {
                 this.psiLabelList[index] = new ScrollingList(this.psiGroupList.Position + new Vector2f(this.psiGroupList.Size.X + 16f, 0.0f), this.depth, items1, this.rows, (float)Fonts.Main.LineHeight, (float)((double)this.width - (double)this.psiGroupList.Size.X - 16.0), Paths.GRAPHICS + "cursor.dat");
                 this.psiLabelList[index].ShowSelectionRectangle = false;
-                this.psiLabelList[index].UseHighlightTextColor = false;
+                this.psiLabelList[index].UseHighlightTextColor = true;
                 this.psiLabelList[index].ShowCursor = false;
                 this.psiLabelList[index].Focused = false;
                 int val1_1 = 0;
@@ -268,9 +268,9 @@ namespace Mother4.GUI
 
         private void ChangeSelectedLevel(int groupIndex, int newLevel)
         {
-            this.psiLevelList[groupIndex][this.selectedLevel].ShowCursor = false;
+            //this.psiLevelList[groupIndex][this.selectedLevel].ShowCursor = false;
             this.selectedLevel = newLevel;
-            this.psiLevelList[groupIndex][this.selectedLevel].ShowCursor = true;
+            //this.psiLevelList[groupIndex][this.selectedLevel].ShowCursor = true;
         }
 
         public void Reset()

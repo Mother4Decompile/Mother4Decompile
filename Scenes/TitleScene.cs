@@ -144,6 +144,17 @@ namespace Mother4.Scenes
 					}
 					case Button.Seven:
 						break;
+					case Button.Eight:
+
+							Engine.ScreenScale = 6;
+							SceneManager.Instance.Transition = new ColorFadeTransition(0.25f, Color.Black);
+							PartyManager.Instance.AddAll(new CharacterType[]
+{
+					CharacterType.Travis,
+					CharacterType.Floyd,
+					CharacterType.Meryl
+}); SceneManager.Instance.Push(new BattleScene(new EnemyType[] { EnemyType.AtomicPowerRobo, EnemyType.Flamingo }, true));
+							 break;
 					default:
 						return;
 					}

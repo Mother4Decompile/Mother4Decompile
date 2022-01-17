@@ -16,13 +16,15 @@ namespace Mother4.Battle.Actions
 		{
 			this.combatant = (aparams.sender as PlayerCombatant);
 			this.target = (aparams.targets[0] as EnemyCombatant);
-			string like = EnemyThoughts.GetLike(this.target.Enemy);
-			StringBuilder stringBuilder = new StringBuilder();
-			stringBuilder.AppendFormat("{0} tried chatting up {1}{2}.\n", CharacterNames.GetName(this.combatant.Character), EnemyNames.GetArticle(this.target.Enemy), EnemyNames.GetName(this.target.Enemy));
-			stringBuilder.AppendFormat("{0} had a lot to say about {1}.\n", Capitalizer.Capitalize(EnemyNames.GetSubjectivePronoun(this.target.Enemy)), like);
-			stringBuilder.Append("@[p:10].[p:10].[p:30].They really hit it off!");
-			this.controller.Data.AddReplace("topicOfDiscussion", like);
-			this.message = stringBuilder.ToString();
+			/*	string like = EnemyThoughts.GetLike(this.target.Enemy);
+				StringBuilder stringBuilder = new StringBuilder();
+				stringBuilder.AppendFormat("{0} tried chatting up {1}.\n", CharacterNames.GetName(this.combatant.Character), EnemyNames.GetName(this.target.Enemy));
+				stringBuilder.AppendFormat("{0} had a lot to say about {1}.\n", Capitalizer.Capitalize(EnemyNames.GetSubjectivePronoun(this.target.Enemy)), like);
+				stringBuilder.Append("@[p:10].[p:10].[p:30].They really hit it off!");
+				string shit = string.Format("{0} tried chatting up {1}.\n", CharacterNames.GetName(this.combatant.Character), EnemyNames.GetName(this.target.Enemy)); ;
+				shit += Environment.NewLine + string.Format("{0} had a lot to say about {1}.\n", Capitalizer.Capitalize(EnemyNames.GetSubjectivePronoun(this.target.Enemy)), like);
+				*/
+		//	this.message = stringBuilder.ToString(); ;
 			this.state = FloydTalkAction.State.Initialize;
 		}
 
@@ -32,49 +34,54 @@ namespace Mother4.Battle.Actions
 			base.UpdateAction();
 			switch (this.state)
 			{
-			case FloydTalkAction.State.Initialize:
-				this.controller.InterfaceController.OnTextboxComplete += this.InteractionComplete;
-				this.controller.InterfaceController.ShowTextBox(this.message, false);
-				this.controller.InterfaceController.TalkSound.Play();
-				this.controller.InterfaceController.PopCard(this.combatant.ID, 12);
-				if (!this.controller.CombatantController.IsIdValid(this.target.ID))
-				{
-					Combatant[] factionCombatants = this.controller.CombatantController.GetFactionCombatants(BattleFaction.EnemyTeam);
-					this.target = (factionCombatants[Engine.Random.Next() % factionCombatants.Length] as EnemyCombatant);
-				}
-				this.state = FloydTalkAction.State.WaitForUI;
-				return;
-			case FloydTalkAction.State.WaitForUI:
-				break;
-			case FloydTalkAction.State.Finish:
-			{
-				this.controller.InterfaceController.OnTextboxComplete -= this.InteractionComplete;
-				this.controller.InterfaceController.PopCard(this.combatant.ID, 0);
-				int turnsRemaining = 2 + (int)Math.Round(Math.Abs(GaussianRandom.Next(0.0, 0.6)));
-				this.combatant.SavedTargets = new Combatant[]
-				{
+				case FloydTalkAction.State.Initialize:
+					this.controller.InterfaceController.OnTextboxComplete += this.InteractionComplete;
+				
+					string like = EnemyThoughts.GetLike(this.target.Enemy);
+					controller.InterfaceController.ShowTextBox(string.Format("{0} tried chatting up {1}.", CharacterNames.GetName(this.combatant.Character), EnemyNames.GetName(this.target.Enemy)), false);
+					controller.InterfaceController.ShowTextBox(string.Format("{0} had a lot to say about {1}.", Capitalizer.Capitalize(EnemyNames.GetSubjectivePronoun(this.target.Enemy)), like), false);
+					controller.InterfaceController.ShowTextBox("@[p:10].[p:10].[p:30].They really hit it off!", false);
+				//	stringBuilder.Append("@[p:10].[p:10].[p:30].They really hit it off!");
+					this.controller.InterfaceController.PopCard(this.combatant.ID, 12);
+					
+					if (!this.controller.CombatantController.IsIdValid(this.target.ID))
+					{
+						Combatant[] factionCombatants = this.controller.CombatantController.GetFactionCombatants(BattleFaction.EnemyTeam);
+						this.target = (factionCombatants[Engine.Random.Next() % factionCombatants.Length] as EnemyCombatant);
+					}
+					this.state = FloydTalkAction.State.WaitForUI;
+					return;
+				case FloydTalkAction.State.WaitForUI:
+					break;
+				case FloydTalkAction.State.Finish:
+					{
+						this.controller.InterfaceController.OnTextboxComplete -= this.InteractionComplete;
+						this.controller.InterfaceController.PopCard(this.combatant.ID, 0);
+						int turnsRemaining = 2 + (int)Math.Round(Math.Abs(GaussianRandom.Next(0.0, 0.6)));
+						this.combatant.SavedTargets = new Combatant[]
+						{
 					this.target
-				};
-				this.combatant.AddStatusEffect(new StatusEffectInstance
-				{
-					Type = StatusEffect.Talking,
-					TurnsRemaining = int.MaxValue
-				});
-				this.target.SavedTargets = new Combatant[]
-				{
+						};
+						this.combatant.AddStatusEffect(new StatusEffectInstance
+						{
+							Type = StatusEffect.Talking,
+							TurnsRemaining = int.MaxValue
+						});
+						this.target.SavedTargets = new Combatant[]
+						{
 					this.combatant
-				};
-				this.target.AddStatusEffect(new StatusEffectInstance
-				{
-					Type = StatusEffect.Talking,
-					TurnsRemaining = turnsRemaining
-				});
-				this.target.OnStatusEffectChange += this.combatant.HandleStatusChangeFromOther;
-				this.complete = true;
-				break;
-			}
-			default:
-				return;
+						};
+						this.target.AddStatusEffect(new StatusEffectInstance
+						{
+							Type = StatusEffect.Talking,
+							TurnsRemaining = turnsRemaining
+						});
+						this.target.OnStatusEffectChange += this.combatant.HandleStatusChangeFromOther;
+						this.complete = true;
+						break;
+					}
+				default:
+					return;
 			}
 		}
 

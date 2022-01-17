@@ -59,7 +59,7 @@ namespace Mother4.Data
 		}
 
 		// Token: 0x04000745 RID: 1861
-		public static EnemyType Dummy = new EnemyType(Hash.Get("test.Dummy"));
+		public static EnemyType Dummy = new EnemyType();
 
 		// Token: 0x04000746 RID: 1862
 		public static EnemyType MagicSnail = new EnemyType(Hash.Get("test.MagicSnail"));
